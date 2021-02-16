@@ -2,7 +2,7 @@
 title: Home
 template: home
 blueprint: home_page
-hero_title: 'Preach the Gospel'
+hero_title: 'Preach the Gospel!'
 hero_subtitle: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 about_title: 'We are a church that believes in Jesus & loves God and people'
 about_content:
@@ -37,7 +37,7 @@ connect_content:
         type: text
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.'
 updated_by: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
-updated_at: 1613514213
+updated_at: 1613514313
 block_1_title: 'Small Groups'
 block_1_link: 0b5543da-8185-4b26-8019-a806e2f00011
 block_1_image: general/small-group.jpg
