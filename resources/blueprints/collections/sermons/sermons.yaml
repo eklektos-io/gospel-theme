@@ -139,32 +139,6 @@ sections:
           validate:
             - 'regex: /^[0-9,:-]*$/'
           instructions: 'e.g. "1:4-7" or "3:17-4:5"'
-      -
-        handle: description
-        field:
-          always_show_set_button: false
-          buttons:
-            - h2
-            - h3
-            - bold
-            - italic
-            - unorderedlist
-            - orderedlist
-            - removeformat
-            - quote
-            - anchor
-            - image
-          save_html: false
-          toolbar_mode: fixed
-          link_noopener: true
-          link_noreferrer: true
-          target_blank: true
-          reading_time: false
-          fullscreen: true
-          allow_source: true
-          type: bard
-          listable: hidden
-          display: Description
   sidebar:
     display: Sidebar
     fields:
@@ -193,3 +167,32 @@ sections:
           type: text
           listable: hidden
           display: Video
+  content:
+    display: Content
+    fields:
+      -
+        handle: description
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: true
+          link_noreferrer: true
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          type: bard
+          listable: hidden
+          display: Description
