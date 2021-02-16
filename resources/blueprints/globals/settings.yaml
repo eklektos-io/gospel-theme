@@ -1,0 +1,154 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: church_name
+        field:
+          input_type: text
+          antlers: false
+          display: 'Church Name'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: white_logo
+        field:
+          mode: grid
+          container: images
+          folder: general
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          display: 'White Logo'
+          type: assets
+          icon: assets
+          listable: hidden
+          validate:
+            - required
+          width: 50
+      -
+        handle: color_logo
+        field:
+          mode: grid
+          container: images
+          folder: general
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          display: 'Color Logo'
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: site_color
+        field:
+          theme: classic
+          lock_opacity: true
+          default_color_mode: hex
+          color_modes:
+            - hex
+          display: 'Site Color'
+          type: color
+          icon: color
+          listable: hidden
+          width: 33
+      -
+        handle: color_overlay
+        field:
+          display: 'Color Overlay'
+          type: toggle
+          icon: toggle
+          width: 33
+          listable: hidden
+      -
+        handle: overlay_opacity
+        field:
+          step: 25
+          min: 25
+          max: 75
+          default: 50
+          display: 'Overlay Opacity'
+          type: range
+          icon: range
+          listable: hidden
+          width: 33
+      -
+        handle: hero_image
+        field:
+          mode: grid
+          container: images
+          folder: general
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Hero Image'
+          type: assets
+          icon: assets
+          listable: hidden
+      -
+        handle: blog
+        field:
+          display: Blog
+          type: toggle
+          icon: toggle
+          listable: hidden
+      -
+        handle: map
+        field:
+          antlers: false
+          display: 'Google Maps Data'
+          type: textarea
+          icon: textarea
+          listable: hidden
+  links:
+    display: Links
+    fields:
+      -
+        handle: facebook
+        field:
+          input_type: url
+          antlers: false
+          display: Facebook
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: twitter
+        field:
+          input_type: url
+          antlers: false
+          display: Twitter
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: instagram
+        field:
+          input_type: url
+          antlers: false
+          display: Instagram
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: youtube
+        field:
+          input_type: url
+          antlers: false
+          display: Youtube
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: vimeo
+        field:
+          input_type: text
+          antlers: false
+          display: Vimeo
+          type: text
+          icon: text
+          listable: hidden

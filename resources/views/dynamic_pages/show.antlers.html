@@ -1,0 +1,19 @@
+<section class="py-16">
+    <div class="container py-16 mx-auto">
+        <div class="flex">
+            <div class="flex-grow pr-12">
+                <div class="rich-text">
+                    {{ content }}
+                </div>
+            </div>
+            <nav class="border-l border-gray-100">
+                <ul>
+                    {{ collection :from="page:collection" }}
+                    <li class="pl-12 py-4 border-l-4 border-transparent {{ if current_uri == url }}border-color text-color{{ /if }}"><a href="{{ url }}" class="font-serif font-bold whitespace-no-wrap">{{ title }}</a></li>
+                    {{ /collection }}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+

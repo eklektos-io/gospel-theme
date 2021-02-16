@@ -1,0 +1,39 @@
+title: 'Bible Books'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: testament
+        field:
+          options:
+            OT: OT
+            NT: NT
+          inline: false
+          type: radio
+          listable: hidden
+          display: Testament
+      -
+        handle: sequence
+        field:
+          input_type: text
+          type: text
+          listable: hidden
+          display: Sequence
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          validate:
+            - required

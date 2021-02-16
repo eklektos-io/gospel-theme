@@ -1,0 +1,47 @@
+title: 'Sermon Series'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: image
+        field:
+          mode: grid
+          container: images
+          folder: sermon-series
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          listable: hidden
+          display: Image
+      -
+        handle: description
+        field:
+          type: textarea
+          listable: hidden
+          display: Description
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: current_series
+        field:
+          type: toggle
+          listable: hidden
+          display: 'Current Series'

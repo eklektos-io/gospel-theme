@@ -1,0 +1,40 @@
+<section class="py-16">
+    <div class="container py-16 mx-auto">
+        {{ partial:partials/sermon-header }}
+            {{ if !get }}
+                {{ collection:sermons as="sermons"}}
+                    {{ sermons }}
+                        <div class="py-10 border-b border-gray-100 {{ if last }}border-none{{ /if }}">
+                            <a href="{{ url }}"><h2 class="font-serif font-bold text-2xl pb-2 hover:text-color">{{ title }}</h2></a>
+                            <p class="text-sm"><strong>Date: </strong>{{ sermon_date format="F j, Y" }}  |  <strong>Speaker: </strong>{{ collection:people :id:is="speaker" }}<a href="?by=speaker&speaker={{ slug }}" class="link">{{ title }}</a>{{ /collection:people }}  |  <strong>Scripture: </strong>{{ taxonomy:bible_books :title:is="bible_book" }}<a href="?by=scripture&scripture={{ slug }}" class="link">{{ title }}</a>{{ /taxonomy:bible_books }} {{ chapter_and_verse }}  |  <strong>Series: </strong>{{ collection:sermon_series :id:is="sermon_series" }}<a href="?by=series&series={{ slug }}" class="link">{{ title }}</a>{{ /collection:sermon_series }}</p>
+                        </div>
+                    {{ /sermons }}
+                {{ /collection:sermons }}
+
+            {{ elseif get:by=="scripture" }}
+            {{ taxonomy:bible_books }}
+                    {{ if get:scripture == slug }}
+                        {{ collection:sermons :bible_book:is="title"}}
+                            <div class="py-10 border-b border-gray-100 {{ if last }}border-none{{ /if }}">
+                                <a href="{{ url }}"><h2 class="font-serif font-bold text-2xl pb-2 hover:text-color">{{ title }}</h2></a>
+                                <p class="text-sm"><strong>Date: </strong>{{ sermon_date format="F j, Y" }}  |  <strong>Speaker: </strong>{{ collection:people :id:is="speaker" }}<a href="?by=speaker&speaker={{ slug }}" class="link">{{ title }}</a>{{ /collection:people }}  |  <strong>Scripture: </strong><a href="?by=scripture&scripture={{ bible_book | slugify }}" class="link">{{ bible_book }}</a> {{ chapter_and_verse }}  |  <strong>Series: </strong>{{ collection:sermon_series :id:is="sermon_series" }}<a href="?by=series&series={{ slug }}" class="link">{{ title }}</a>{{ /collection:sermon_series }}</p>
+                            </div>
+                        {{ /collection:sermons }}
+                    {{ /if }}
+                {{ /taxonomy:bible_books }}
+
+            {{ elseif get:by=="series" }}
+                {{ collection:sermon_series }}
+                    {{ if get:series == slug }}
+                        {{ collection:sermons :sermon_series:is="id"}}
+                            <div class="py-10 border-b border-gray-100 {{ if last }}border-none{{ /if }}">
+                                <a href="{{ url }}"><h2 class="font-serif font-bold text-2xl pb-2 hover:text-color">{{ title }}</h2></a>
+                                <p class="text-sm"><strong>Date: </strong>{{ sermon_date format="F j, Y" }}  |  <strong>Speaker: </strong>{{ collection:people :id:is="speaker" }}<a href="?by=speaker&speaker={{ slug }}" class="link">{{ title }}</a>{{ /collection:people }}  |  <strong>Scripture: </strong>{{ taxonomy:bible_books :title:is="bible_book" }}<a href="?by=scripture&scripture={{ slug }}" class="link">{{ title }}</a>{{ /taxonomy:bible_books }} {{ chapter_and_verse }}  |  <strong>Series: </strong><a href="?by=series&series={{ sermon_series:slug }}" class="link">{{ sermon_series:title }}</a></p>
+                            </div>
+                        {{ /collection:sermons }}
+                    {{ /if }}
+                {{ /collection:sermon_series }}
+            {{ /if }}
+        </div>
+    </div>
+</section>

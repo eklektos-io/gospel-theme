@@ -1,0 +1,138 @@
+<!-- HERO -->
+{{ partial:partials/hero }}
+
+<!-- LATEST SERMON -->
+<section class="py-24 text-white bg-gray-900">
+    <div class="container mx-auto">
+        <div class="flex items-center">
+            <div class="flex-grow">
+                <h2 class="text-xs uppercase tracking-widest text-gray-500">Latest Sermon</h2>
+                {{ collection:sermons limit="1" }}
+                <h3 class="text-4xl font-serif font-bold">{{ title }}</h3>
+                {{ partial:partials/sermon-info }}
+                <div class="w-32 h-2 my-4 bg-color"></div>
+            </div>
+            <div>
+                <a class="button" href="{{ url }}">Listen Now →</a>
+                {{ /collection:sermons }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="py-32">
+    <div class="container bg-gray-100 py-16 px-16 mx-auto">
+        <div class="grid grid-cols-3 gap-x-10 items-center">
+            <div class="col-span-2">
+                <h2 class="text-xs uppercase tracking-widest text-gray-400">About</h2>
+                <h3 class="text-4xl font-serif font-bold">{{ about_title }}</h3>
+                <div class="w-32 h-2 my-4 bg-color"></div>
+                {{ about_content }}
+            </div>
+            <div class="col-span-1">
+                <img src="{{ about_image }}" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EVENTS -->
+{{ collection:events recurring_event:is="false" as="non_recurring" event_date:gte="{today format='Y-m-d'}" sort="event_date:asc" }}
+{{ if non_recurring | count > 0 }} <!-- Check if any non-recurring events exist -->
+<section class="py-32">
+    <div class="container mx-auto">
+        <h2 class="text-xs uppercase tracking-widest text-gray-400">Happening</h2>
+        <h3 class="text-4xl font-serif font-bold">Upcoming Events</h3>
+        <div class="w-32 h-2 my-4 bg-color"></div>
+
+        <div class="grid grid-cols-4 gap-4 text-center text-white">
+            {{ non_recurring limit="3" }} <!-- Loop through up to 3 non-recurring events -->
+            <a href="" class="relative h-80 overflow-hidden">
+                <div class="absolute h-full w-full bg-black bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+                    <h4 class="font-serif text-2xl font-bold">{{ title }}</h4>
+                    <p class="text-sm">{{ event_date format="F j, Y" }}</p>
+                </div>
+                <img class="absolute h-full w-full object-center object-cover" src="{{ image }}" alt="">
+            </a>
+            {{ /non_recurring }}
+            {{ if non_recurring | count > 3 }} <!-- Check if more than 3 non-recurring events exist -->
+            <a href="/upcoming-events" class="relative h-80 overflow-hidden">
+                <div class="absolute h-full w-full bg-grey-500 bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+                    <h4 class="font-serif text-2xl font-bold">View More →</h4>
+                </div>
+                <img class="absolute h-full w-full object-center object-cover" src="{{ asset url="/assets/site/calendar.jpg" }}{{ url }}{{ /asset }}" alt="">
+            </a>
+            {{ /if }}
+        </div>
+    </div>
+</section>
+{{ /if }}
+{{ /collection:events }}
+
+<!-- CONNECT -->
+<section class="py-32">
+    <div class="container bg-gray-100 py-16 px-16 mx-auto">
+        <div class="grid grid-cols-3 grid-rows-2 gap-4 items-center" style="height: 500px;">
+            <div class="col-span-1 row-span-2">
+                <h2 class="text-xs uppercase tracking-widest text-gray-400">Community</h2>
+                <h3 class="text-4xl font-serif font-bold">{{ connect_title }}</h3>
+                <div class="w-32 h-2 my-4 bg-color"></div>
+                {{ connect_content }}
+            </div>
+            <a href="{{ block_1_link }} {{ url }} {{ /block_1_link }}" class="relative overflow-hidden col-span-1 row-span-1 h-full">
+                <div class="absolute h-full w-full bg-black text-white bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+                    <h4 class="font-serif text-2xl font-bold">{{ block_1_title }}</h4>
+                </div>
+                <img class="absolute h-full w-full object-center object-cover" src="{{ block_1_image }}" alt="">
+            </a>
+            <a href="{{ block_2_link }} {{ url }} {{ /block_2_link }}" class="relative overflow-hidden col-span-1 row-span-2 h-full">
+                <div class="absolute h-full w-full bg-black text-white bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+                    <h4 class="font-serif text-2xl font-bold">{{ block_2_title }}</h4>
+                </div>
+                <img class="absolute h-full w-full object-center object-cover" src="{{ block_2_image }}" alt="">
+            </a>
+            <a href="{{ block_3_link }} {{ url }} {{ /block_3_link }}" class="relative overflow-hidden col-span-1 row-span-1 h-full">
+                <div class="absolute h-full w-full bg-black text-white bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+                    <h4 class="font-serif text-2xl font-bold">{{ block_3_title }}</h4>
+                </div>
+                <img class="absolute h-full w-full object-center object-cover" src="{{ block_3_image }}" alt="">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- BLOG -->
+{{ if settings:blog }} <!-- Check if blog is enabled in settings -->
+{{ collection:blog_posts as="posts" sort="date:desc" }}
+{{ if posts | count > 0 }} <!-- Check if any blog posts exist -->
+<section class="py-32">
+    <div class="container mx-auto">
+        <h2 class="text-xs uppercase tracking-widest text-gray-400">LATEST</h2>
+        <h3 class="text-4xl font-serif font-bold">From the Blog</h3>
+        <div class="w-32 h-2 my-4 bg-color"></div>
+
+        <div class="grid grid-cols-4 gap-4 text-center text-white">
+            {{ posts limit="3" }} <!-- Loop through up to 3 blog posts -->
+            <a href="" class="relative h-80 overflow-hidden">
+                <div class="absolute h-full w-full bg-black bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+                    <h4 class="font-serif text-2xl font-bold">{{ title }}</h4>
+                    <p class="text-sm">{{ date format="F j, Y" }}</p>
+                </div>
+                <img class="absolute h-full w-full object-center object-cover" src="{{ image }}" alt="">
+            </a>
+            {{ /posts }}
+            {{ if posts | count > 3 }} <!-- Check if more than 3 blog posts exist -->
+            <a href="/blog" class="relative h-80 overflow-hidden">
+                <div class="absolute h-full w-full  bg-black bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+                    <h4 class="font-serif text-2xl font-bold">View More →</h4>
+                </div>
+                <img class="absolute h-full w-full object-center object-cover" src="{{ asset url="/assets/site/blog.jpg" }}{{ url }}{{ /asset }}" alt="">
+            </a>
+            {{ /if }}
+        </div>
+    </div>
+</section>
+{{ /if }}
+{{ /collection:blog_posts }}
+{{ /if }}

@@ -1,0 +1,9 @@
+<header class="pt-56 pb-20 bg-cover text-white relative" style="background-image: url('{{ settings:hero_image }}')">
+    <div class="container mx-auto z-10 relative">
+        <h1 class="text-7xl font-serif font-bold">{{ title }}</h1>
+        {{ if collection=="sermons"}}
+        {{ partial:partials/sermon-info theme="white" }}
+        {{ /if }}
+    </div>
+    <div class="absolute inset-0 bg-black bg-opacity-25"></div>
+</header>

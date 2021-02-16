@@ -1,0 +1,13 @@
+title: '2. About Pages'
+template: dynamic_pages/show
+layout: layout
+revisions: false
+route: 'about/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+structure:
+  root: false
+  max_depth: 1
+  tree: {  }

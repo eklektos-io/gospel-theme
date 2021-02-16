@@ -1,0 +1,36 @@
+<section class="pt-32 pb-16 bg-gray-100">
+    <div class="container mx-auto">
+        <div class="grid grid-cols-5 gap-4">
+            <ul>
+                <h3 class="font-serif text-2xl font-bold mb-2">About</h3>
+                {{ collection:about_pages }}
+                <li><a href="{{ url }}" class="link">{{ title }}</a></li>
+                {{ /collection:about_pages }}
+            </ul>
+            <ul>
+                <h3 class="font-serif text-2xl font-bold mb-2">Ministries</h3>
+                {{ collection:ministry_pages }}
+                <li><a href="{{ url }}" class="link">{{ title }}</a></li>
+                {{ /collection:ministry_pages }}
+            </ul>
+            <ul>
+                <h3 class="font-serif text-2xl font-bold mb-2">Resources</h3>
+                <li><a href="" class="link">Sermons</a></li>
+                <li><a href="" class="link">Blog</a></li>
+            </ul>
+            <div class="col-span-2">
+                <h3 class="font-serif text-2xl font-bold mb-2">Signup for our Newsletter</h3>
+                <form action="" class="flex">
+                    <input type="email" name="Email" id="" placeholder="Enter your email*" class="h-10 px-4 flex-grow placeholder-gray-400 text-sm focus:border-color">
+                    <input type="button" value="Submit" class="px-10 uppercase tracking-widest font-bold text-white bg-color text-xs cursor-pointer">
+                </form>
+            </div>
+        </div>
+        <div class="h-px w-full bg-gray-200 my-16"></div>
+        <div class="grid grid-cols-3 items-center">
+            <a href="/"><img src="{{ settings:color_logo }}" alt="" class="w-48"></a>
+            <p class="text-xs text-center text-gray-400">© {{ now format="Y" }} {{ settings:church_name }}. All rights reserved.</p>
+            {{ partial:partials/social }}
+        </div>
+    </div>
+</section>

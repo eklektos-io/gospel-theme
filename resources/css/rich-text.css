@@ -1,0 +1,46 @@
+.rich-text p, .rich-text h2, .rich-text h3 {
+    @apply mb-4;
+}
+
+.rich-text h2,
+.rich-text h3 {
+    @apply mt-8 font-serif font-bold;
+}
+
+.rich-text h2:first-child,
+.rich-text h3:first-child {
+    @apply mt-0;
+}
+
+.rich-text h2 {
+    @apply text-3xl;
+}
+
+.rich-text h3 {
+    @apply text-xl;
+}
+
+.rich-text li {
+    display: list-item;
+}
+
+.rich-text ul,
+.rich-text ol {
+    display: block;
+    margin-bottom: 1.25rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+.rich-text ul {
+    list-style-type: disc;
+}
+
+.rich-text ol {
+    list-style-type: decimal;
+}
+
+.rich-text blockquote {
+    @apply block my-10 mr-10 pl-10 border-l-4 border-color text-lg text-gray-500;
+}

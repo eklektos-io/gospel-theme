@@ -1,0 +1,48 @@
+<div id="menu" class="absolute inset-0 bg-gray-900 text-white z-40">
+    <div class="absolute inset-0 flex justify-center items-center mt-32">
+        <div class="container grid grid-rows-2 row-gap-20" style="grid-template-columns: 0.8fr 1fr auto;">
+            <nav>
+                <h2 class="font-serif text-6xl font-bold">About</h2>
+                <div class="w-32 h-2 my-4 bg-color"></div>
+                <ul>
+                    {{ collection:about_pages }}
+                    <li class="pt-2"><a href="{{ url }}" class="hover:text-color">{{ title }}</a></li>
+                    {{ /collection:about_pages }}
+                </ul>
+            </nav>
+            <nav>
+                <h2 class="font-serif text-6xl font-bold">Ministries</h2>
+                <div class="w-32 h-2 my-4 bg-color"></div>
+                <ul>
+                    {{ collection:ministry_pages }}
+                    <li class="pt-2"><a href="{{ url }}" class="hover:text-color">{{ title }}</a></li>
+                    {{ /collection:ministry_pages }}
+                </ul>
+            </nav>
+            <nav>
+                <h2 class="font-serif text-6xl font-bold">Resources</h2>
+                <div class="w-32 h-2 my-4 bg-color"></div>
+                <ul>
+                    <li class="pt-2"><a href="/sermons" class="hover:text-color">Sermons</a></li>
+                    <li class="pt-2"><a href="/blog" class="hover:text-color">Blog</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h2 class="font-serif text-6xl font-bold">Events</h2>
+                <div class="w-32 h-2 my-4 bg-color"></div>
+                <ul>
+                    <li class="pt-2"><a href="/upcoming-events" class="hover:text-color">Upcoming</a></li>
+                    <li class="pt-2"><a href="/recurring-events" class="hover:text-color">Recurring</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <a class="font-serif text-6xl font-bold hover:text-color" href="/contact">Contact</a>
+                <div class="w-32 h-2 my-4 bg-color"></div>
+            </nav>
+            <nav>
+                <a class="font-serif text-6xl font-bold hover:text-color" href="">Donate</a>
+                <div class="w-32 h-2 my-4 bg-color"></div>
+            </nav>
+        </div>
+    </div>
+</div>

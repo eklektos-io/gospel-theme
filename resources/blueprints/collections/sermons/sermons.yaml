@@ -1,0 +1,195 @@
+title: Sermon
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: sermon_date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          type: date
+          listable: hidden
+          display: Date
+          validate:
+            - required
+      -
+        handle: speaker
+        field:
+          max_items: 1
+          mode: select
+          collections:
+            - people
+          type: entries
+          listable: true
+          display: Speaker
+          width: 50
+      -
+        handle: sermon_series
+        field:
+          max_items: 1
+          mode: select
+          collections:
+            - sermon_series
+          type: entries
+          listable: hidden
+          display: 'Sermon Series'
+          width: 50
+      -
+        handle: bible_book
+        field:
+          options:
+            Genesis: Genesis
+            Exodus: Exodus
+            Leviticus: Leviticus
+            Numbers: Numbers
+            Deuteronomy: Deuteronomy
+            Joshua: Joshua
+            Judges: Judges
+            Ruth: Ruth
+            '1 Samuel': '1 Samuel'
+            '2 Samuel': '2 Samuel'
+            '1 Kings': '1 Kings'
+            '2 Kings': '2 Kings'
+            '1 Chronicles': '1 Chronicles'
+            '2 Chronicles': '2 Chronicles'
+            Ezra: Ezra
+            Nehemiah: Nehemiah
+            Esther: Esther
+            Job: Job
+            Psalms: Psalms
+            Proverbs: Proverbs
+            Ecclesiastes: Ecclesiastes
+            'Song of Solomon': 'Song of Solomon'
+            Isaiah: Isaiah
+            Jeremiah: Jeremiah
+            Lamentations: Lamentations
+            Ezekiel: Ezekiel
+            Daniel: Daniel
+            Hosea: Hosea
+            Joel: Joel
+            Amos: Amos
+            Obadiah: Obadiah
+            Jonah: Jonah
+            Micah: Micah
+            Nahum: Nahum
+            Habakkuk: Habakkuk
+            Zephaniah: Zephaniah
+            Haggai: Haggai
+            Zechariah: Zechariah
+            Malachi: Malachi
+            Matthew: Matthew
+            Mark: Mark
+            Luke: Luke
+            John: John
+            Acts: Acts
+            Romans: Romans
+            '1 Corinthians': '1 Corinthians'
+            '2 Corinthians': '2 Corinthians'
+            Galatians: Galatians
+            Ephesians: Ephesians
+            Philippians: Philippians
+            Colossians: Colossians
+            '1 Thessalonians': '1 Thessalonians'
+            '2 Thessalonians': '2 Thessalonians'
+            '1 Timothy': '1 Timothy'
+            '2 Timothy': '2 Timothy'
+            Titus: Titus
+            Philemon: Philemon
+            Hebrews: Hebrews
+            James: James
+            '1 Peter': '1 Peter'
+            '2 Peter': '2 Peter'
+            '1 John': '1 John'
+            '2 John': '2 John'
+            '3 John': '3 John'
+            Jude: Jude
+            Revelation: Revelation
+          clearable: true
+          multiple: false
+          searchable: true
+          taggable: false
+          push_tags: false
+          cast_booleans: false
+          type: select
+          width: 50
+          listable: hidden
+          display: 'Bible Book'
+      -
+        handle: chapter_and_verse
+        field:
+          input_type: text
+          type: text
+          width: 50
+          listable: hidden
+          display: 'Chapter & Verse'
+          validate:
+            - 'regex: /^[0-9,:-]*$/'
+          instructions: 'e.g. "1:4-7" or "3:17-4:5"'
+      -
+        handle: description
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: true
+          link_noreferrer: true
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          type: bard
+          listable: hidden
+          display: Description
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+  media:
+    display: Media
+    fields:
+      -
+        handle: audio
+        field:
+          input_type: url
+          type: text
+          listable: hidden
+          display: Audio
+      -
+        handle: video
+        field:
+          input_type: url
+          type: text
+          listable: hidden
+          display: Video

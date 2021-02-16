@@ -1,0 +1,244 @@
+hide: true
+title: 'Home Page'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: hero_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Hero Title'
+          type: text
+          icon: text
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: hero_subtitle
+        field:
+          input_type: text
+          antlers: false
+          display: 'Hero Subtitle'
+          type: text
+          icon: text
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - static_pages
+          max_items: 1
+          listable: false
+          localizable: true
+  about:
+    display: About
+    fields:
+      -
+        handle: about_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'About Title'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: about_content
+        field:
+          always_show_set_button: false
+          buttons:
+            - bold
+            - italic
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: true
+          link_noreferrer: true
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: 'About Content'
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: about_image
+        field:
+          mode: grid
+          container: images
+          folder: general
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'About Image'
+          type: assets
+          icon: assets
+          listable: hidden
+  connect:
+    display: Connect
+    fields:
+      -
+        handle: connect_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Connect Title'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: connect_content
+        field:
+          always_show_set_button: false
+          buttons:
+            - bold
+            - italic
+            - anchor
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: true
+          link_noreferrer: true
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: 'Connect Content'
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: block_1_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Block 1 Title'
+          type: text
+          icon: text
+          width: 33
+          listable: hidden
+      -
+        handle: block_1_link
+        field:
+          max_items: 1
+          mode: default
+          collections:
+            - static_pages
+            - about_pages
+            - ministry_pages
+          display: 'Block 1 Link'
+          type: entries
+          icon: entries
+          width: 33
+          listable: hidden
+      -
+        handle: block_1_image
+        field:
+          mode: grid
+          container: images
+          folder: general
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Block 1 Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 33
+      -
+        handle: block_2_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Block 2 Title'
+          type: text
+          icon: text
+          width: 33
+          listable: hidden
+      -
+        handle: block_2_link
+        field:
+          max_items: 1
+          mode: default
+          collections:
+            - static_pages
+            - about_pages
+            - ministry_pages
+          display: 'Block 2 Link'
+          type: entries
+          icon: entries
+          width: 33
+          listable: hidden
+      -
+        handle: block_2_image
+        field:
+          mode: grid
+          container: images
+          folder: general
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Block 2 Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 33
+      -
+        handle: block_3_title
+        field:
+          input_type: text
+          antlers: false
+          display: 'Block 3 Title'
+          type: text
+          icon: text
+          width: 33
+          listable: hidden
+      -
+        handle: block_3_link
+        field:
+          max_items: 1
+          mode: default
+          collections:
+            - static_pages
+            - about_pages
+            - ministry_pages
+          display: 'Block 3 Link'
+          type: entries
+          icon: entries
+          width: 33
+          listable: hidden
+      -
+        handle: block_3_image
+        field:
+          mode: grid
+          container: images
+          folder: general
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Block 3 Image'
+          type: assets
+          icon: assets
+          listable: hidden
+          width: 33

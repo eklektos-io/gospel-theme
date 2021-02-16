@@ -1,0 +1,146 @@
+title: Event
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: image
+        field:
+          mode: grid
+          container: images
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+          validate:
+            - required
+          folder: events
+      -
+        handle: recurring_event
+        field:
+          display: 'Recurring Event'
+          type: toggle
+          icon: toggle
+          listable: hidden
+          instructions: 'If this is a recurring event, such as a weekly Bible study or monthly meal.'
+      -
+        handle: occurrence
+        field:
+          input_type: text
+          antlers: false
+          display: Occurrence
+          type: text
+          icon: text
+          instructions: 'Ex. Every Sunday, First Sunday of each month, Every other Thursday, etc.'
+          listable: hidden
+          width: 50
+          if:
+            recurring_event: 'equals true'
+      -
+        handle: time
+        field:
+          display: Time
+          type: time
+          icon: time
+          listable: hidden
+          if:
+            recurring_event: 'equals true'
+          width: 50
+      -
+        handle: event_date
+        field:
+          mode: single
+          time_enabled: true
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          display: Date
+          type: date
+          icon: date
+          listable: hidden
+          if:
+            recurring_event: 'equals false'
+      -
+        handle: location
+        field:
+          input_type: text
+          antlers: false
+          display: Location
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: details
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: true
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: Details
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: files
+        field:
+          mode: grid
+          container: files
+          restrict: false
+          allow_uploads: true
+          display: Files
+          type: assets
+          icon: assets
+          instructions: 'Attach PDF(s) or other files.'
+          width: 50
+          listable: hidden
+      -
+        handle: filename
+        field:
+          input_type: text
+          antlers: false
+          display: Filename
+          type: text
+          icon: text
+          instructions: 'How you would like this file to appear on the site. Ex. Application Form, Program Schedule, etc.'
+          width: 50
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required

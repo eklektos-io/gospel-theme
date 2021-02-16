@@ -1,0 +1,9 @@
+name: Michael
+super: true
+id: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
+password_hash: $2y$10$Ob5seZkiKPM4ujbe8RzjheKbD6o6vcJbMgdTP1x15L.XhJRL9sHtW
+preferences:
+  collections:
+    people:
+      columns:
+        - title
