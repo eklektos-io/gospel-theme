@@ -1,14 +1,11 @@
-<section class="py-16">
-    <div class="container py-16 mx-auto">
-        {{ partial:partials/sermon-header }}
-        <div class="grid grid-cols-4 gap-4 text-center text-white mt-10">
-            {{ collection:sermon_series }}
-                <a href="/sermons?by=series&series={{ slug }}" class="relative h-80 overflow-hidden">
-                    <div class="absolute h-full w-full bg-black bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
-                        <h4 class="font-serif text-2xl font-bold">{{ title }}</h4>
-                    </div>
-                    <img class="absolute h-full w-full object-center object-cover" src="{{ image }}" alt="">
-                </a>
-            {{ /collection:sermon_series }}
-        </div>
-</section>
+{{ partial:partials/sermon-header }}
+<div class="grid grid-cols-4 gap-4 text-center text-white mt-10">
+    {{ collection:sermon_series }}
+        <a href="/sermons?by=series&series={{ slug }}" class="relative h-80 overflow-hidden">
+            <div class="absolute h-full w-full bg-black bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+                <h4 class="font-serif text-2xl font-bold">{{ title }}</h4>
+            </div>
+            <img class="absolute h-full w-full object-center object-cover" src="{{ image }}" alt="">
+        </a>
+    {{ /collection:sermon_series }}
+</div>
