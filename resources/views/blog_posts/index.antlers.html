@@ -1,0 +1,20 @@
+<div class="grid grid-cols-4 gap-4 text-center mt-10">
+{{ collection:blog_posts limit="1" paginate="true" as="posts" }}
+    {{ posts }}
+    <a href="/sermons?by=series&series={{ slug }}" class="relative h-80 overflow-hidden">
+        <div class="absolute h-full w-full bg-black text-white bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+            <h4 class="font-serif text-2xl font-bold">{{ title }}</h4>
+            <p class="text-sm">{{ date format="F j, Y" }}</p>
+        </div>
+        <img class="absolute h-full w-full object-center object-cover" src="{{ image }}" alt="">
+    </a>
+    {{ /posts }}
+</div>
+<div class="mt-10">
+    <ul class="flex justify-center">
+        <li><a href="" class="rounded-full flex items-center justify-center h-8 w-8 mx-2 text-xs font-bold hover:bg-color hover:text-white">1</a></li>
+        <li><a href="" class="rounded-full flex items-center justify-center h-8 w-8 text-xs font-bold hover:bg-color hover:text-white">2</a></li>
+        
+    </ul>
+</div>
+{{ /collection:blog_posts }}
