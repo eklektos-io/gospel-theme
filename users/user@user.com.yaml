@@ -3,4 +3,4 @@ super: false
 roles:
   - editor
 id: e43e82a2-5440-4fc1-9d63-19627f525f00
-password_hash: $2y$10$zT9YPhTNlg29NEI/7PDuKOXI2ZHw2hBsbkTVH4H3yB/M61xxErE9u
+password_hash: $2y$10$RTFV9JPYKJo0a1T3kiE/C.5Vv/PqCP.bDX4l5yRzabYHrBqre7Wwi
