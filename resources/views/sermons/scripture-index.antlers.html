@@ -7,7 +7,7 @@
                 {{ collection:sermons :bible_book:is="title" limit="1" }}
                     <ul>
                         <li>
-                            <a class="link underline" href="/sermons?by=scripture&scripture={{ bible_book | slugify }}">{{ bible_book }}</a>
+                            <a class="link underline hover:no-underline" href="/sermons?by=scripture&scripture={{ bible_book | slugify }}">{{ bible_book }}</a>
                         </li>
                         {{ if !bible_book }}
                         <li class="text-gray-400">{{ title }}</li>
@@ -24,7 +24,7 @@
                 {{ collection:sermons :bible_book:is="title" limit="1" }}
                     <ul>
                         <li>
-                            <a class="link underline" href="/sermons?by=scripture&scripture={{ bible_book | slugify }}">{{ bible_book }}</a>
+                            <a class="link underline hover:no-underline" href="/sermons?by=scripture&scripture={{ bible_book | slugify }}">{{ bible_book }}</a>
                         </li>
                         {{ if !bible_book }}
                         <li class="text-gray-400">{{ title }}</li>

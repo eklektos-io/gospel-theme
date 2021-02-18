@@ -13,7 +13,7 @@
         {{ /if }}
     </h1>
     <div class="flex">
-        <a href="/sermons?by=all" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if !get && last_segment=="sermons" }} border-color bg-color text-white{{ /if }}">View All</a>
+        <a href="/sermons?by=all" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:by=="all" && last_segment=="sermons" }} border-color bg-color text-white{{ /if }}">View All</a>
         <a href="/sermons-by-scripture" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:by=="scripture" || last_segment=="sermons-by-scripture" }} border-color bg-color text-white{{ /if }}">Scripture</a>
         <a href="/sermons-by-series" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:by=="series" || last_segment=="sermons-by-series" }} border-color bg-color text-white{{ /if }}">Series</a>
     </div> 
