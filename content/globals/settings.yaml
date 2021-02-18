@@ -7,7 +7,7 @@ data:
   color_overlay: true
   overlay_opacity: '75'
   hero_image: general/hero.jpg
-  blog: false
+  blog: true
   map: '!1m18!1m12!1m3!1d2885.6001067630905!2d-79.39169768450154!3d43.67728597912047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cda34d1150ff%3A0xd13c7a0f86d4c082!2sLather%20%26%20Steel%20BarberShop!5e0!3m2!1sen!2sca!4v1607394475031!5m2!1sen!2sca'
   facebook: 'https://www.facebook.com/'
   twitter: 'https://www.twitter.com/'
