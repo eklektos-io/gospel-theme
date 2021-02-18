@@ -1,3 +1,4 @@
+{{ if !settings:blog }}{{ redirect to="/" }}{{ /if }}
 <div class="grid grid-cols-4 gap-4 text-center mt-10">
 {{ collection:blog_posts limit="12" paginate="true" as="posts" }}
     {{ posts }}
