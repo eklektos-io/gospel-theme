@@ -1,5 +1,5 @@
 title: '6. Events'
-template: default
+template: events/show
 layout: layout
 revisions: false
 route: 'events/{slug}'

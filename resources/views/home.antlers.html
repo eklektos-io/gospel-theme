@@ -48,7 +48,7 @@
 
         <div class="grid grid-cols-4 gap-4 text-center text-white">
             {{ non_recurring limit="3" }} <!-- Loop through up to 3 non-recurring events -->
-            <a href="" class="relative h-80 overflow-hidden">
+            <a href="{{ url }}" class="relative h-80 overflow-hidden">
                 <div class="absolute h-full w-full bg-black bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
                     <h4 class="font-serif text-2xl font-bold">{{ title }}</h4>
                     <p class="text-sm">{{ event_date format="F j, Y" }}</p>
@@ -57,7 +57,7 @@
             </a>
             {{ /non_recurring }}
             {{ if non_recurring | count > 3 }} <!-- Check if more than 3 non-recurring events exist -->
-            <a href="/upcoming-events" class="relative h-80 overflow-hidden">
+            <a href="/events?type=upcoming" class="relative h-80 overflow-hidden">
                 <div class="absolute h-full w-full bg-grey-500 bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
                     <h4 class="font-serif text-2xl font-bold">View More →</h4>
                 </div>

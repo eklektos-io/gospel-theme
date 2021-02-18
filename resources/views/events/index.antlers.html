@@ -1,1 +1,31 @@
 {{ partial:partials/event-header }}
+
+{{ if get:type == "upcoming" }}
+    {{ collection:events recurring_event:is="false" event_date:gte="{today format='Y-m-d'}" sort="event_date:asc" }}
+        <div class="flex py-10 border-b border-gray-100 {{ if last }}border-none{{ /if }}">
+            <img src="{{ image }}" alt="" class="h-48 w-72 object-cover flex-none mr-8">
+            <div class="relative">
+                <h3 class="text-xl font-bold mb-2">{{ title }}</h3>
+                <p class="text-sm"><strong>Date: </strong>{{ event_date format="F j, Y" }}</p>
+                <p class="text-sm mb-4"><strong>Location: </strong>{{ location }}</p>
+                <p>{{ details | safe_truncate:180:... }}</p>
+                <a href="{{ url }}" class="link absolute bottom-0 left-0">More Info</a>
+            </div>
+        </div>
+    {{ /collection:events }}
+{{ /if }}
+
+{{ if get:type == "recurring" }}
+    {{ collection:events recurring_event:is="true" }}
+        <div class="flex py-10 border-b border-gray-100 {{ if last }}border-none{{ /if }}">
+            <img src="{{ image }}" alt="" class="h-48 w-72 object-cover flex-none mr-8">
+            <div class="relative">
+                <h3 class="text-xl font-bold mb-2">{{ title }}</h3>
+                <p class="text-sm"><strong>Date: </strong>{{ event_date format="F j, Y" }}</p>
+                <p class="text-sm mb-4"><strong>Location: </strong>{{ location }}</p>
+                <p>{{ details | safe_truncate:180:... }}</p>
+                <a href="{{ url }}" class="link absolute bottom-0 left-0">More Info</a>
+            </div>
+        </div>
+    {{ /collection:events }}
+{{ /if }}
