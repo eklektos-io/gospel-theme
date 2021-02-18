@@ -15,8 +15,8 @@
             </ul>
             <ul>
                 <h3 class="font-serif text-2xl font-bold mb-2">Resources</h3>
-                <li><a href="" class="link">Sermons</a></li>
-                <li><a href="" class="link">Blog</a></li>
+                <li><a href="/sermons?by=all" class="link">Sermons</a></li>
+                {{ if settings:blog }}<li><a href="/blog" class="link">Blog</a></li>{{ /if }}
             </ul>
             <div class="col-span-2">
                 <h3 class="font-serif text-2xl font-bold mb-2">Signup for our Newsletter</h3>

@@ -23,8 +23,8 @@
                 <h2 class="font-serif text-6xl font-bold">Resources</h2>
                 <div class="w-32 h-2 my-4 bg-color"></div>
                 <ul>
-                    <li class="pt-2"><a href="/sermons" class="hover:text-color">Sermons</a></li>
-                    <li class="pt-2"><a href="/blog" class="hover:text-color">Blog</a></li>
+                    <li class="pt-2"><a href="/sermons?by=all" class="hover:text-color">Sermons</a></li>
+                    {{ if settings:blog }}<li class="pt-2"><a href="/blog" class="hover:text-color">Blog</a></li>{{ /if }}
                 </ul>
             </nav>
             <nav>
