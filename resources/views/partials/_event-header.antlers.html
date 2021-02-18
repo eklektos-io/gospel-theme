@@ -1,0 +1,13 @@
+<div class="flex justify-between content-center">
+    <h1 class="text-3xl font-bold">
+        {{ if get:type=="upcoming" && last_segment=="events" }}
+        Upcoming Events
+        {{ elseif get:type=="recurring" && last_segment=="events" }}
+        Recurring Events
+        {{ /if }}
+    </h1>
+    <div class="flex">
+        <a href="/events?type=upcoming" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:type=="upcoming" }} border-color bg-color text-white{{ /if }}">Upcoming</a>
+        <a href="/events?type=recurring" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:type=="recurring" }} border-color bg-color text-white{{ /if }}">Recurring</a>
+    </div> 
+</div>
