@@ -122,6 +122,7 @@ sections:
           instructions: 'Attach PDF(s) or other files.'
           width: 50
           listable: hidden
+          max_files: 1
       -
         handle: filename
         field:
