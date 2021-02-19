@@ -100,7 +100,7 @@ sections:
         handle: map
         field:
           antlers: false
-          display: 'Google Maps Data'
+          display: 'Google Maps Embed'
           type: textarea
           icon: textarea
           listable: hidden
