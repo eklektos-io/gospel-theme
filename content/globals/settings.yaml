@@ -8,7 +8,7 @@ data:
   overlay_opacity: '75'
   hero_image: general/hero.jpg
   blog: true
-  map: '!1m18!1m12!1m3!1d2885.6001067630905!2d-79.39169768450154!3d43.67728597912047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cda34d1150ff%3A0xd13c7a0f86d4c082!2sLather%20%26%20Steel%20BarberShop!5e0!3m2!1sen!2sca!4v1607394475031!5m2!1sen!2sca'
+  map: '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.800058190375!2d-79.45370538422267!3d43.65232806050465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3436ecb883e9%3A0x44b2590e7c379bad!2sWestminster%20Chapel%20at%20High%20Park!5e0!3m2!1sen!2sca!4v1613768983621!5m2!1sen!2sca" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>'
   facebook: 'https://www.facebook.com/'
   twitter: 'https://www.twitter.com/'
   instagram: 'https://www.instagram.com/'
