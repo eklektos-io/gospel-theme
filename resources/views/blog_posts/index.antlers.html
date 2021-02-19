@@ -2,7 +2,7 @@
 <div class="grid grid-cols-4 gap-4 text-center mt-10">
 {{ collection:blog_posts limit="12" paginate="true" as="posts" }}
     {{ posts }}
-    <a href="/sermons?by=series&series={{ slug }}" class="relative h-80 overflow-hidden">
+    <a href="{{ url }}" class="relative h-80 overflow-hidden">
         <div class="absolute h-full w-full bg-black text-white bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
             <h4 class="font-serif text-2xl font-bold">{{ title }}</h4>
             <p class="text-sm">{{ date format="F j, Y" }}</p>
