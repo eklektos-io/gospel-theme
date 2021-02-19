@@ -110,13 +110,13 @@ sections:
           icon: bard
           listable: hidden
       -
-        handle: files
+        handle: file
         field:
           mode: grid
           container: files
           restrict: false
           allow_uploads: true
-          display: Files
+          display: File
           type: assets
           icon: assets
           instructions: 'Attach PDF(s) or other files.'
