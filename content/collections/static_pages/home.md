@@ -27,7 +27,7 @@ about_content:
               target: null
               rel: null
         text: 'Learn More'
-about_image: general/bible.jpg
+about_image: general/church.jpg
 connect_title: 'Get Connected'
 connect_content:
   -
@@ -37,7 +37,7 @@ connect_content:
         type: text
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.'
 updated_by: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
-updated_at: 1613751916
+updated_at: 1613752075
 block_1_title: 'Small Groups'
 block_1_link: 0b5543da-8185-4b26-8019-a806e2f00011
 block_1_image: general/small-group.jpg
