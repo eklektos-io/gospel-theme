@@ -53,6 +53,17 @@ sections:
           listable: hidden
           validate:
             - required
+      -
+        handle: author
+        field:
+          max_items: 1
+          mode: select
+          collections:
+            - people
+          display: Author
+          type: entries
+          icon: entries
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:
