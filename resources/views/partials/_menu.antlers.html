@@ -8,6 +8,9 @@
                     {{ collection:about_pages }}
                     <li class="pt-2"><a href="{{ url }}" class="hover:text-color">{{ title }}</a></li>
                     {{ /collection:about_pages }}
+                    {{ collection:hidden_pages slug:is="leadership" }}
+                    <li class="pt-2"><a href="{{ url }}" class="hover:text-color">{{ title }}</a></li>
+                    {{ /collection:hidden_pages }}
                 </ul>
             </nav>
             <nav>

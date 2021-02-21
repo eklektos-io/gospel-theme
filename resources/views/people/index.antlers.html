@@ -1,0 +1,17 @@
+<div class="flex">
+    <div class="flex-grow pr-12">
+        <div class="rich-text">
+            {{ content }}
+        </div>
+    </div>
+    <nav class="border-l border-gray-100">
+        <ul>
+            {{ collection:about_pages }}
+                <li class="pl-12 py-4 border-l-4 border-transparent {{ if current_uri == url }}border-color text-color{{ /if }}"><a href="{{ url }}" class="font-serif font-bold whitespace-no-wrap">{{ title }}</a></li>
+            {{ /collection:about_pages }}
+            {{ collection:hidden_pages slug:is="leadership" }}
+                <li class="pl-12 py-4 border-l-4 border-transparent {{ if current_uri == url }}border-color text-color{{ /if }}"><a href="{{ url }}" class="font-serif font-bold whitespace-no-wrap">{{ title }}</a></li>
+            {{ /collection:hidden_pages }}
+        </ul>
+    </nav>
+</div>
