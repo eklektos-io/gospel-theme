@@ -32,7 +32,7 @@
 {{ sermons }}
     <div class="{{ if first }}pb-10{{ else }}py-10{{ /if }} border-b border-gray-100 {{ paginate }}{{ if last && total_pages == 1 }}border-none{{ /if }}{{ /paginate }}">
         <a href="{{ url }}"><h2 class="font-serif font-bold text-2xl pb-2 hover:text-color">{{ title }}</h2></a>
-        <p class="text-sm"><strong>Date: </strong>{{ sermon_date format="F j, Y" }}  |  <strong>Speaker: </strong>{{ collection:people :id:is="speaker" }}<a href="?by=speaker&speaker={{ slug }}" class="link">{{ title }}</a>{{ /collection:people }}  |  <strong>Scripture: </strong>{{ taxonomy:bible_books :title:is="bible_book" }}<a href="?by=scripture&scripture={{ slug }}" class="link">{{ title }}</a>{{ /taxonomy:bible_books }} {{ chapter_and_verse }}  |  <strong>Series: </strong>{{ collection:sermon_series :id:is="sermon_series" }}<a href="?by=series&series={{ slug }}" class="link">{{ title }}</a>{{ /collection:sermon_series }}</p>
+        <p class="text-sm"><strong>Date: </strong>{{ sermon_date format="F j, Y" }}  |  <strong>Scripture: </strong>{{ taxonomy:bible_books :title:is="bible_book" }}<a href="?by=scripture&scripture={{ slug }}" class="link">{{ title }}</a>{{ /taxonomy:bible_books }} {{ chapter_and_verse }}  |  <strong>Series: </strong>{{ collection:sermon_series :id:is="sermon_series" }}<a href="?by=series&series={{ slug }}" class="link">{{ title }}</a>{{ /collection:sermon_series }}</p>
     </div>
 {{ /sermons }}
 <div class="mt-10 flex text-sm">
