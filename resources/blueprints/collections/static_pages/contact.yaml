@@ -10,6 +10,42 @@ sections:
           required: true
           validate:
             - required
+      -
+        handle: address
+        field:
+          input_type: text
+          antlers: false
+          display: Address
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: directions
+        field:
+          input_type: text
+          antlers: false
+          display: Directions
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: email
+        field:
+          input_type: email
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: phone
+        field:
+          input_type: tel
+          antlers: false
+          display: Phone
+          type: text
+          icon: text
+          listable: hidden
   sidebar:
     display: Sidebar
     fields:
