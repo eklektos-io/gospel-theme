@@ -1,0 +1,7 @@
+<ul class="flex text-xs relative" style="top: 0.5rem">
+    {{ nav:breadcrumbs include_home="false" }}
+    <li class="flex items-center">
+        {{ if !is_current }}<a href="{{ url }}" class="hover:underline">{{ /if }}{{ title }}{{ if !is_current }}</a><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-4 w-4 mx-1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9 5l7 7-7 7" /></svg>{{ /if }}
+    </li>
+    {{ /nav:breadcrumbs }}
+</ul>
