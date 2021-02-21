@@ -96,14 +96,7 @@ sections:
           type: toggle
           icon: toggle
           listable: hidden
-      -
-        handle: map
-        field:
-          antlers: false
-          display: 'Google Maps Embed'
-          type: textarea
-          icon: textarea
-          listable: hidden
+          width: 50
       -
         handle: donate_link
         field:
@@ -112,6 +105,15 @@ sections:
           display: 'Donate Link'
           type: text
           icon: text
+          width: 50
+          listable: hidden
+      -
+        handle: map
+        field:
+          antlers: false
+          display: 'Google Maps Embed'
+          type: textarea
+          icon: textarea
           listable: hidden
   links:
     display: Links
