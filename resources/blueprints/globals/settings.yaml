@@ -104,6 +104,15 @@ sections:
           type: textarea
           icon: textarea
           listable: hidden
+      -
+        handle: donate_link
+        field:
+          input_type: url
+          antlers: false
+          display: 'Donate Link'
+          type: text
+          icon: text
+          listable: hidden
   links:
     display: Links
     fields:
