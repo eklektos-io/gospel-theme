@@ -2,7 +2,7 @@
     <div class="flex-grow pr-12">
         {{ collection:people roles:contains="Elder" as="elders" }}
         <h2 class="font-serif text-3xl font-bold mb-4">Elders</h2>
-        <div class="grid grid-cols-3 gap-x-4 gap-y-8 mb-12">
+        <div class="grid grid-cols-3 gap-x-4 gap-y-8 mb-16">
             {{ elders }}
                 <a href="{{ url }}" class="col-span-1 hover:text-color">
                     {{ image }}<img src="{{ url }}" alt="{{ alt }}" class="object-cover w-full mb-2" style="object-position: {{ focus_css }}; height: 400px;">{{ /image }}
@@ -14,7 +14,7 @@
         {{ /collection:people }}  
         {{ collection:people roles:contains="Deacon" as="deacons" }}
         <h2 class="font-serif text-3xl font-bold mb-4">Deacons</h2>
-        <div class="grid grid-cols-3 gap-x-4 gap-y-8 mb-12">
+        <div class="grid grid-cols-3 gap-x-4 gap-y-8 mb-16">
             {{ deacons }}
                 <a href="{{ url }}" class="col-span-1 hover:text-color">
                     {{ image }}<img src="{{ url }}" alt="{{ alt }}" class="object-cover w-full mb-2" style="object-position: {{ focus_css }}; height: 400px;">{{ /image }}
@@ -26,7 +26,7 @@
         {{ /collection:people }}     
         {{ collection:people roles:contains="Ministry Leader" as="leaders" }}
         <h2 class="font-serif text-3xl font-bold mb-4">Ministry Leaders</h2>
-        <div class="grid grid-cols-3 gap-x-4 gap-y-8 mb-12">
+        <div class="grid grid-cols-3 gap-x-4 gap-y-8 mb-16">
             {{ leaders }}
                 <a href="{{ url }}" class="col-span-1 hover:text-color">
                     {{ image }}<img src="{{ url }}" alt="{{ alt }}" class="object-cover w-full mb-2" style="object-position: {{ focus_css }}; height: 400px;">{{ /image }}
