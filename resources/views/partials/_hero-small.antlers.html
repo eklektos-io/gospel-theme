@@ -1,4 +1,4 @@
-<header class="pt-56 pb-20 bg-cover text-white relative" style="background-image: url('{{ if !image }}{{ settings:hero_image }}{{ url }}{{ /settings:hero_image }}{{ else }}{{ image }}{{ url }}{{ /image }}{{ /if }}'); background-position: {{ if !image }}{{ settings:hero_image }}{{ focus_css }}{{ /settings:hero_image }}{{ else }}{{ image }}{{ focus_css }}{{ /image }}{{ /if }}">
+<header class="pt-56 pb-20 bg-cover text-white relative" style="background-image: url('{{ if !image || collection == "people" }}{{ settings:hero_image }}{{ url }}{{ /settings:hero_image }}{{ else }}{{ image }}{{ url }}{{ /image }}{{ /if }}'); background-position: {{ if !image || collection == "people" }}{{ settings:hero_image }}{{ focus_css }}{{ /settings:hero_image }}{{ else }}{{ image }}{{ focus_css }}{{ /image }}{{ /if }}">
     <div class="container mx-auto z-10 relative">
         {{ if collection=="sermons" || collection=="blog_posts" || collection=="events" }}
             {{ partial:partials/breadcrumbs }}
