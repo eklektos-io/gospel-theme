@@ -1,9 +1,7 @@
 ---
 title: 'Tristique Senectus Et Netus'
-sermon_date: '2020-12-27'
-speaker: 82042aac-ffeb-4e98-ad22-bf62b153e4c4
+sermon_date: '2020-12-27 14:47'
 sermon_series: e8814631-b7b7-4a1a-a6c0-349e348eda6f
-bible_book: Galatians
 chapter_and_verse: '1:1-20'
 description:
   -
@@ -15,6 +13,6 @@ description:
 audio: 'https://cdn.gty.org/sermons/High/60-1.mp3'
 video: 'https://www.youtube.com/watch?v=QaAmxC89OKY'
 updated_by: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
-updated_at: 1610846300
+updated_at: 1614005254
 id: 9e5c057a-3ba0-4391-900c-6f152b822631
 ---
