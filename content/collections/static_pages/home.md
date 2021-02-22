@@ -37,7 +37,7 @@ connect_content:
         type: text
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.'
 updated_by: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
-updated_at: 1614004177
+updated_at: 1614004284
 block_1_title: 'Small Groups'
 block_1_link: 0b5543da-8185-4b26-8019-a806e2f00011
 block_1_image: general/small-group.jpg
@@ -46,6 +46,7 @@ block_2_link: 87d79aa5-7f67-4932-930d-16421d730d0f
 block_3_title: 'Bible Study'
 block_3_image: general/bible.jpg
 block_2_image: general/pews.jpg
+block_3_link: 02473712-97d3-4ae1-8f6d-67855deacb8c
 id: home
 ---
 Welcome to your new Statamic website.
