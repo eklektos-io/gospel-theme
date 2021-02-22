@@ -186,6 +186,7 @@ sections:
             - static_pages
             - about_pages
             - ministry_pages
+            - events
           display: 'Block 2 Link'
           type: entries
           icon: entries
@@ -224,6 +225,7 @@ sections:
             - static_pages
             - about_pages
             - ministry_pages
+            - events
           display: 'Block 3 Link'
           type: entries
           icon: entries
