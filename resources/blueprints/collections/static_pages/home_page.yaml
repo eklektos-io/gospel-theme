@@ -147,6 +147,7 @@ sections:
             - static_pages
             - about_pages
             - ministry_pages
+            - events
           display: 'Block 1 Link'
           type: entries
           icon: entries
