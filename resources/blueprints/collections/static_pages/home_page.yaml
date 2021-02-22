@@ -63,6 +63,8 @@ sections:
           type: text
           icon: text
           listable: hidden
+          validate:
+            - required
       -
         handle: about_content
         field:
@@ -83,6 +85,8 @@ sections:
           type: bard
           icon: bard
           listable: hidden
+          validate:
+            - required
       -
         handle: about_image
         field:
@@ -96,6 +100,8 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+          validate:
+            - required
   connect:
     display: Connect
     fields:
@@ -108,6 +114,8 @@ sections:
           type: text
           icon: text
           listable: hidden
+          validate:
+            - required
       -
         handle: connect_content
         field:
@@ -138,6 +146,8 @@ sections:
           icon: text
           width: 33
           listable: hidden
+          validate:
+            - required
       -
         handle: block_1_link
         field:
@@ -153,6 +163,8 @@ sections:
           icon: entries
           width: 33
           listable: hidden
+          validate:
+            - required
       -
         handle: block_1_image
         field:
@@ -167,6 +179,8 @@ sections:
           icon: assets
           listable: hidden
           width: 33
+          validate:
+            - required
       -
         handle: block_2_title
         field:
@@ -177,6 +191,8 @@ sections:
           icon: text
           width: 33
           listable: hidden
+          validate:
+            - required
       -
         handle: block_2_link
         field:
@@ -192,6 +208,8 @@ sections:
           icon: entries
           width: 33
           listable: hidden
+          validate:
+            - required
       -
         handle: block_2_image
         field:
@@ -206,6 +224,8 @@ sections:
           icon: assets
           listable: hidden
           width: 33
+          validate:
+            - required
       -
         handle: block_3_title
         field:
@@ -216,6 +236,8 @@ sections:
           icon: text
           width: 33
           listable: hidden
+          validate:
+            - required
       -
         handle: block_3_link
         field:
@@ -231,6 +253,8 @@ sections:
           icon: entries
           width: 33
           listable: hidden
+          validate:
+            - required
       -
         handle: block_3_image
         field:
@@ -245,3 +269,5 @@ sections:
           icon: assets
           listable: hidden
           width: 33
+          validate:
+            - required
