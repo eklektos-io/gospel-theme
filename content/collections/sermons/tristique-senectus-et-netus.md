@@ -13,6 +13,8 @@ description:
 audio: 'https://cdn.gty.org/sermons/High/60-1.mp3'
 video: 'https://www.youtube.com/watch?v=QaAmxC89OKY'
 updated_by: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
-updated_at: 1614005254
+updated_at: 1614005286
+speaker: 82042aac-ffeb-4e98-ad22-bf62b153e4c4
+bible_book: Philippians
 id: 9e5c057a-3ba0-4391-900c-6f152b822631
 ---
