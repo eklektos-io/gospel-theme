@@ -1,6 +1,6 @@
 ---
 title: 'Mauris Eu Libero Dolor'
-sermon_date: '2021-01-10 16:18'
+sermon_date: '2021-01-10'
 speaker: 82042aac-ffeb-4e98-ad22-bf62b153e4c4
 sermon_series: 08c2d541-ce87-4825-840d-6fdddc1872b6
 bible_book: John
@@ -85,6 +85,7 @@ description:
         text: 'Ne discipulum abducam, times. Effluit igitur voluptas corporis et prima quaeque avolat saepiusque relinquit causam paenitendi quam recordandi. Aeque enim contingit omnibus fidibus, ut incontentae sint. Itaque primos congressus copulationesque et consuetudinum instituendarum voluntates fieri propter voluptatem; Isto modo ne improbos quidem, si essent boni viri. Propter nos enim illam, non propter eam nosmet ipsos diligimus. Qui enim voluptatem ipsam contemnunt, iis licet dicere se acupenserem maenae non anteponere. Eodem modo is enim tibi nemo dabit, quod, expetendum sit, id esse laudabile.'
 video: 'https://vimeo.com/134437064'
 updated_by: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
-updated_at: 1614005425
+updated_at: 1614050291
+audio: TheChristofMiracles_MikeBoot.mp3
 id: 01e2c070-bcc1-4a88-8dd7-7eb31c89bffe
 ---
