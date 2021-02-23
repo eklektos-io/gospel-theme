@@ -13,7 +13,7 @@
 {{ /if }}
 {{ if audio }}
     <audio {{ if video && audio }}id="audio"{{ /if }} controls preload="metadata" class="w-full">
-        <source src="{{ audio }}" type="audio/mpeg">
+        <source src="https://eklektos.nyc3.cdn.digitaloceanspaces.com/{{ audio | raw}}" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 <div class="text-center mt-6">
