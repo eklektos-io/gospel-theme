@@ -180,16 +180,21 @@ sections:
     display: Media
     fields:
       -
-        handle: audio
-        field:
-          input_type: url
-          type: text
-          listable: hidden
-          display: Audio
-      -
         handle: video
         field:
           input_type: url
           type: text
           listable: hidden
           display: Video
+      -
+        handle: audio
+        field:
+          mode: grid
+          container: sermons
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Audio
+          type: assets
+          icon: assets
+          listable: hidden
