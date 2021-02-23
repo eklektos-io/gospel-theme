@@ -191,6 +191,8 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+          validate:
+            - 'mimes:mp3'
       -
         handle: video
         field:
