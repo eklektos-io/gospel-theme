@@ -83,7 +83,6 @@ description:
       -
         type: text
         text: 'Ne discipulum abducam, times. Effluit igitur voluptas corporis et prima quaeque avolat saepiusque relinquit causam paenitendi quam recordandi. Aeque enim contingit omnibus fidibus, ut incontentae sint. Itaque primos congressus copulationesque et consuetudinum instituendarum voluntates fieri propter voluptatem; Isto modo ne improbos quidem, si essent boni viri. Propter nos enim illam, non propter eam nosmet ipsos diligimus. Qui enim voluptatem ipsam contemnunt, iis licet dicere se acupenserem maenae non anteponere. Eodem modo is enim tibi nemo dabit, quod, expetendum sit, id esse laudabile.'
-audio: 'https://cdn.gty.org/sermons/High/60-1.mp3'
 video: 'https://vimeo.com/134437064'
 updated_by: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
 updated_at: 1614005425
