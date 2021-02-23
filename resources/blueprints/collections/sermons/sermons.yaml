@@ -192,7 +192,7 @@ sections:
           icon: assets
           listable: hidden
           validate:
-            - 'mimes:.mp3 audio/mpeg'
+            - 'mimetypes:audio/mpeg'
       -
         handle: video
         field:
