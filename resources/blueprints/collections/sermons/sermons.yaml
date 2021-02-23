@@ -180,13 +180,6 @@ sections:
     display: Media
     fields:
       -
-        handle: video
-        field:
-          input_type: url
-          type: text
-          listable: hidden
-          display: Video
-      -
         handle: audio
         field:
           mode: grid
@@ -198,3 +191,10 @@ sections:
           type: assets
           icon: assets
           listable: hidden
+      -
+        handle: video
+        field:
+          input_type: url
+          type: text
+          listable: hidden
+          display: Video
