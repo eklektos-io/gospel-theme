@@ -5,7 +5,7 @@ data:
   color_logo: general/logo.svg
   site_color: '#A5895D'
   color_overlay: false
-  overlay_opacity: '75'
+  overlay_opacity: '25'
   hero_image: general/hero.jpg
   blog: true
   donate_link: 'https://www.paypal.com'
