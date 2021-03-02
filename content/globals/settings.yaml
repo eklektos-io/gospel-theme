@@ -3,7 +3,7 @@ data:
   church_name: 'Gospel Theme'
   white_logo: general/logo-white.svg
   color_logo: general/logo.svg
-  site_color: '#BB5757'
+  site_color: '#CFAB70'
   color_overlay: true
   overlay_opacity: '75'
   hero_image: general/hero.jpg
