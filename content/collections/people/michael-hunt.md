@@ -3,19 +3,11 @@ title: 'Michael Hunt'
 position: 'Lead Pastor'
 about:
   -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
-        text: 'Lorem ipsum dolor sit amet'
-  -
     type: paragraph
     content:
       -
         type: text
-        text: 'consectetur adipiscing elit. Nunc pulvinar odio arcu, vel pellentesque purus scelerisque et. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam egestas elit diam, id convallis risus pretium nec. Quisque enim augue, convallis id pharetra sit amet, facilisis sit amet nisl. In augue sem, dignissim in dui ac, porttitor tempor quam. Donec sit amet velit pharetra, placerat erat ut, imperdiet est. Sed vulputate sapien vitae euismod tincidunt.'
+        text: 'Lorem ipsum dolor sit amet consectetur adipiscing elit. Nunc pulvinar odio arcu, vel pellentesque purus scelerisque et. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam egestas elit diam, id convallis risus pretium nec. Quisque enim augue, convallis id pharetra sit amet, facilisis sit amet nisl. In augue sem, dignissim in dui ac, porttitor tempor quam. Donec sit amet velit pharetra, placerat erat ut, imperdiet est. Sed vulputate sapien vitae euismod tincidunt.'
   -
     type: paragraph
     content:
@@ -43,6 +35,6 @@ email: michaelhunt@church.com
 phone: 555-123-1234
 twitter: michaelhunt
 updated_by: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
-updated_at: 1615308525
+updated_at: 1615308545
 id: 82042aac-ffeb-4e98-ad22-bf62b153e4c4
 ---
