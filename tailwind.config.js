@@ -23,6 +23,7 @@ module.exports = {
       colors: {
         color: "var(--color)",
         overlay: "var(--overlay)",
+        heroOverlay: "var(--hero-overlay)",
         gray: {
           900: "#181818",
           800: "#282828",

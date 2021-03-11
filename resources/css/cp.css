@@ -1,1 +1,36 @@
 /* This is all you. */
+.outside.rad-mode {
+    background: #3e9fff;
+    background: linear-gradient(45deg, #3e9fff, #6203ff);
+}
+
+.outside.rad-mode {
+
+    .auth-card {
+        @apply .rounded-lg;
+        box-shadow:
+            rgba(50, 50, 93, .4) 0 12px 34px,
+            rgba(0, 0, 0, .1) 0 3px 4px,
+            inset rgba(108, 167, 234, .2) -5px 5px 30px,
+            inset rgba(90, 4, 228, .2) 5px -5px 30px;
+    }
+
+    .auth-card:hover:focus-within {
+        transform: translateY(-2px);
+        box-shadow:
+            rgba(50, 50, 93, .5) 0 35px 78px 0,
+            rgba(0, 0, 0, .15) 0 4px 5px,
+            inset rgba(108, 167, 234, .15) -3px 3px 25px,
+            inset rgba(90, 4, 228, .15) 3px -3px 25px;
+    }
+
+    .btn-primary {
+        background: linear-gradient(45deg, #3e9fff, #6203ff) !important;
+        box-shadow: 0 2px 5px rgba(90,4,228, 0.3) !important;
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(45deg, #3a94ee, #5a04e4) !important;
+        box-shadow: 0 2px 5px rgba(90,4,228, 0.3) !important;
+    }
+}

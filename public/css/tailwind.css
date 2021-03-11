@@ -588,6 +588,50 @@ video {
 
 /* This is all you. */
 
+/* This is all you. */
+
+.outside.rad-mode {
+  background: #3e9fff;
+  background: linear-gradient(45deg, #3e9fff, #6203ff);
+}
+
+.outside.rad-mode .auth-card {
+    border-radius: 0.5rem;
+    box-shadow:
+            rgba(50, 50, 93, .4) 0 12px 34px,
+            rgba(0, 0, 0, .1) 0 3px 4px,
+            inset rgba(108, 167, 234, .2) -5px 5px 30px,
+            inset rgba(90, 4, 228, .2) 5px -5px 30px;
+  }
+
+.outside.rad-mode .auth-card:hover[focus-within] {
+    transform: translateY(-2px);
+    box-shadow:
+            rgba(50, 50, 93, .5) 0 35px 78px 0,
+            rgba(0, 0, 0, .15) 0 4px 5px,
+            inset rgba(108, 167, 234, .15) -3px 3px 25px,
+            inset rgba(90, 4, 228, .15) 3px -3px 25px;
+  }
+
+.outside.rad-mode .auth-card:hover:focus-within {
+    transform: translateY(-2px);
+    box-shadow:
+            rgba(50, 50, 93, .5) 0 35px 78px 0,
+            rgba(0, 0, 0, .15) 0 4px 5px,
+            inset rgba(108, 167, 234, .15) -3px 3px 25px,
+            inset rgba(90, 4, 228, .15) 3px -3px 25px;
+  }
+
+.outside.rad-mode .btn-primary {
+    background: linear-gradient(45deg, #3e9fff, #6203ff) !important;
+    box-shadow: 0 2px 5px rgba(90,4,228, 0.3) !important;
+  }
+
+.outside.rad-mode .btn-primary:hover {
+    background: linear-gradient(45deg, #3a94ee, #5a04e4) !important;
+    box-shadow: 0 2px 5px rgba(90,4,228, 0.3) !important;
+  }
+
 .rich-text p, .rich-text h2, .rich-text h3 {
   margin-bottom: 1rem;
 }
@@ -3147,6 +3191,10 @@ video {
   border-color: var(--overlay) !important;
 }
 
+.divide-heroOverlay > :not(template) ~ :not(template){
+  border-color: var(--hero-overlay) !important;
+}
+
 .divide-solid > :not(template) ~ :not(template){
   border-style: solid !important;
 }
@@ -3836,6 +3884,10 @@ video {
   background-color: var(--overlay) !important;
 }
 
+.bg-heroOverlay{
+  background-color: var(--hero-overlay) !important;
+}
+
 .hover\:bg-transparent:hover{
   background-color: transparent !important;
 }
@@ -4402,6 +4454,10 @@ video {
 
 .hover\:bg-overlay:hover{
   background-color: var(--overlay) !important;
+}
+
+.hover\:bg-heroOverlay:hover{
+  background-color: var(--hero-overlay) !important;
 }
 
 .focus\:bg-transparent:focus{
@@ -4972,6 +5028,10 @@ video {
   background-color: var(--overlay) !important;
 }
 
+.focus\:bg-heroOverlay:focus{
+  background-color: var(--hero-overlay) !important;
+}
+
 .bg-none{
   background-image: none !important;
 }
@@ -5488,6 +5548,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
 }
 
+.from-heroOverlay{
+  --gradient-from-color: var(--hero-overlay) !important;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+}
+
 .via-transparent{
   --gradient-via-color: transparent !important;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
@@ -5968,6 +6033,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
 }
 
+.via-heroOverlay{
+  --gradient-via-color: var(--hero-overlay) !important;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+}
+
 .to-transparent{
   --gradient-to-color: transparent !important;
 }
@@ -6350,6 +6420,10 @@ video {
 
 .to-overlay{
   --gradient-to-color: var(--overlay) !important;
+}
+
+.to-heroOverlay{
+  --gradient-to-color: var(--hero-overlay) !important;
 }
 
 .hover\:from-transparent:hover{
@@ -6829,6 +6903,11 @@ video {
 
 .hover\:from-overlay:hover{
   --gradient-from-color: var(--overlay) !important;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+}
+
+.hover\:from-heroOverlay:hover{
+  --gradient-from-color: var(--hero-overlay) !important;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
 }
 
@@ -7312,6 +7391,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
 }
 
+.hover\:via-heroOverlay:hover{
+  --gradient-via-color: var(--hero-overlay) !important;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+}
+
 .hover\:to-transparent:hover{
   --gradient-to-color: transparent !important;
 }
@@ -7694,6 +7778,10 @@ video {
 
 .hover\:to-overlay:hover{
   --gradient-to-color: var(--overlay) !important;
+}
+
+.hover\:to-heroOverlay:hover{
+  --gradient-to-color: var(--hero-overlay) !important;
 }
 
 .focus\:from-transparent:focus{
@@ -8173,6 +8261,11 @@ video {
 
 .focus\:from-overlay:focus{
   --gradient-from-color: var(--overlay) !important;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+}
+
+.focus\:from-heroOverlay:focus{
+  --gradient-from-color: var(--hero-overlay) !important;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
 }
 
@@ -8656,6 +8749,11 @@ video {
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
 }
 
+.focus\:via-heroOverlay:focus{
+  --gradient-via-color: var(--hero-overlay) !important;
+  --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+}
+
 .focus\:to-transparent:focus{
   --gradient-to-color: transparent !important;
 }
@@ -9038,6 +9136,10 @@ video {
 
 .focus\:to-overlay:focus{
   --gradient-to-color: var(--overlay) !important;
+}
+
+.focus\:to-heroOverlay:focus{
+  --gradient-to-color: var(--hero-overlay) !important;
 }
 
 .bg-opacity-0{
@@ -9748,6 +9850,10 @@ video {
   border-color: var(--overlay) !important;
 }
 
+.border-heroOverlay{
+  border-color: var(--hero-overlay) !important;
+}
+
 .hover\:border-transparent:hover{
   border-color: transparent !important;
 }
@@ -10316,6 +10422,10 @@ video {
   border-color: var(--overlay) !important;
 }
 
+.hover\:border-heroOverlay:hover{
+  border-color: var(--hero-overlay) !important;
+}
+
 .focus\:border-transparent:focus{
   border-color: transparent !important;
 }
@@ -10882,6 +10992,10 @@ video {
 
 .focus\:border-overlay:focus{
   border-color: var(--overlay) !important;
+}
+
+.focus\:border-heroOverlay:focus{
+  border-color: var(--hero-overlay) !important;
 }
 
 .border-opacity-0{
@@ -16197,6 +16311,18 @@ video {
   color: var(--overlay) !important;
 }
 
+.placeholder-heroOverlay::-moz-placeholder{
+  color: var(--hero-overlay) !important;
+}
+
+.placeholder-heroOverlay:-ms-input-placeholder{
+  color: var(--hero-overlay) !important;
+}
+
+.placeholder-heroOverlay::placeholder{
+  color: var(--hero-overlay) !important;
+}
+
 .focus\:placeholder-transparent:focus::-moz-placeholder{
   color: transparent !important;
 }
@@ -17901,6 +18027,18 @@ video {
   color: var(--overlay) !important;
 }
 
+.focus\:placeholder-heroOverlay:focus::-moz-placeholder{
+  color: var(--hero-overlay) !important;
+}
+
+.focus\:placeholder-heroOverlay:focus:-ms-input-placeholder{
+  color: var(--hero-overlay) !important;
+}
+
+.focus\:placeholder-heroOverlay:focus::placeholder{
+  color: var(--hero-overlay) !important;
+}
+
 .placeholder-opacity-0::-moz-placeholder{
   --placeholder-opacity: 0 !important;
 }
@@ -18864,6 +19002,10 @@ video {
   color: var(--overlay) !important;
 }
 
+.text-heroOverlay{
+  color: var(--hero-overlay) !important;
+}
+
 .hover\:text-transparent:hover{
   color: transparent !important;
 }
@@ -19432,6 +19574,10 @@ video {
   color: var(--overlay) !important;
 }
 
+.hover\:text-heroOverlay:hover{
+  color: var(--hero-overlay) !important;
+}
+
 .focus\:text-transparent:focus{
   color: transparent !important;
 }
@@ -19998,6 +20144,10 @@ video {
 
 .focus\:text-overlay:focus{
   color: var(--overlay) !important;
+}
+
+.focus\:text-heroOverlay:focus{
+  color: var(--hero-overlay) !important;
 }
 
 .text-opacity-0{
@@ -26323,6 +26473,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .sm\:divide-heroOverlay > :not(template) ~ :not(template){
+    border-color: var(--hero-overlay) !important;
+  }
+
   .sm\:divide-solid > :not(template) ~ :not(template){
     border-style: solid !important;
   }
@@ -27012,6 +27166,10 @@ input:focus, button:focus {
     background-color: var(--overlay) !important;
   }
 
+  .sm\:bg-heroOverlay{
+    background-color: var(--hero-overlay) !important;
+  }
+
   .sm\:hover\:bg-transparent:hover{
     background-color: transparent !important;
   }
@@ -27578,6 +27736,10 @@ input:focus, button:focus {
 
   .sm\:hover\:bg-overlay:hover{
     background-color: var(--overlay) !important;
+  }
+
+  .sm\:hover\:bg-heroOverlay:hover{
+    background-color: var(--hero-overlay) !important;
   }
 
   .sm\:focus\:bg-transparent:focus{
@@ -28148,6 +28310,10 @@ input:focus, button:focus {
     background-color: var(--overlay) !important;
   }
 
+  .sm\:focus\:bg-heroOverlay:focus{
+    background-color: var(--hero-overlay) !important;
+  }
+
   .sm\:bg-none{
     background-image: none !important;
   }
@@ -28664,6 +28830,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .sm\:from-heroOverlay{
+    --gradient-from-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .sm\:via-transparent{
     --gradient-via-color: transparent !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
@@ -29144,6 +29315,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .sm\:via-heroOverlay{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .sm\:to-transparent{
     --gradient-to-color: transparent !important;
   }
@@ -29526,6 +29702,10 @@ input:focus, button:focus {
 
   .sm\:to-overlay{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .sm\:to-heroOverlay{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .sm\:hover\:from-transparent:hover{
@@ -30005,6 +30185,11 @@ input:focus, button:focus {
 
   .sm\:hover\:from-overlay:hover{
     --gradient-from-color: var(--overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
+  .sm\:hover\:from-heroOverlay:hover{
+    --gradient-from-color: var(--hero-overlay) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
@@ -30488,6 +30673,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .sm\:hover\:via-heroOverlay:hover{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .sm\:hover\:to-transparent:hover{
     --gradient-to-color: transparent !important;
   }
@@ -30870,6 +31060,10 @@ input:focus, button:focus {
 
   .sm\:hover\:to-overlay:hover{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .sm\:hover\:to-heroOverlay:hover{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .sm\:focus\:from-transparent:focus{
@@ -31349,6 +31543,11 @@ input:focus, button:focus {
 
   .sm\:focus\:from-overlay:focus{
     --gradient-from-color: var(--overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
+  .sm\:focus\:from-heroOverlay:focus{
+    --gradient-from-color: var(--hero-overlay) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
@@ -31832,6 +32031,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .sm\:focus\:via-heroOverlay:focus{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .sm\:focus\:to-transparent:focus{
     --gradient-to-color: transparent !important;
   }
@@ -32214,6 +32418,10 @@ input:focus, button:focus {
 
   .sm\:focus\:to-overlay:focus{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .sm\:focus\:to-heroOverlay:focus{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .sm\:bg-opacity-0{
@@ -32924,6 +33132,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .sm\:border-heroOverlay{
+    border-color: var(--hero-overlay) !important;
+  }
+
   .sm\:hover\:border-transparent:hover{
     border-color: transparent !important;
   }
@@ -33492,6 +33704,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .sm\:hover\:border-heroOverlay:hover{
+    border-color: var(--hero-overlay) !important;
+  }
+
   .sm\:focus\:border-transparent:focus{
     border-color: transparent !important;
   }
@@ -34058,6 +34274,10 @@ input:focus, button:focus {
 
   .sm\:focus\:border-overlay:focus{
     border-color: var(--overlay) !important;
+  }
+
+  .sm\:focus\:border-heroOverlay:focus{
+    border-color: var(--hero-overlay) !important;
   }
 
   .sm\:border-opacity-0{
@@ -39373,6 +39593,18 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .sm\:placeholder-heroOverlay::-moz-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .sm\:placeholder-heroOverlay:-ms-input-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .sm\:placeholder-heroOverlay::placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
   .sm\:focus\:placeholder-transparent:focus::-moz-placeholder{
     color: transparent !important;
   }
@@ -41077,6 +41309,18 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .sm\:focus\:placeholder-heroOverlay:focus::-moz-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .sm\:focus\:placeholder-heroOverlay:focus:-ms-input-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .sm\:focus\:placeholder-heroOverlay:focus::placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
   .sm\:placeholder-opacity-0::-moz-placeholder{
     --placeholder-opacity: 0 !important;
   }
@@ -42040,6 +42284,10 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .sm\:text-heroOverlay{
+    color: var(--hero-overlay) !important;
+  }
+
   .sm\:hover\:text-transparent:hover{
     color: transparent !important;
   }
@@ -42608,6 +42856,10 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .sm\:hover\:text-heroOverlay:hover{
+    color: var(--hero-overlay) !important;
+  }
+
   .sm\:focus\:text-transparent:focus{
     color: transparent !important;
   }
@@ -43174,6 +43426,10 @@ input:focus, button:focus {
 
   .sm\:focus\:text-overlay:focus{
     color: var(--overlay) !important;
+  }
+
+  .sm\:focus\:text-heroOverlay:focus{
+    color: var(--hero-overlay) !important;
   }
 
   .sm\:text-opacity-0{
@@ -49401,6 +49657,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .md\:divide-heroOverlay > :not(template) ~ :not(template){
+    border-color: var(--hero-overlay) !important;
+  }
+
   .md\:divide-solid > :not(template) ~ :not(template){
     border-style: solid !important;
   }
@@ -50090,6 +50350,10 @@ input:focus, button:focus {
     background-color: var(--overlay) !important;
   }
 
+  .md\:bg-heroOverlay{
+    background-color: var(--hero-overlay) !important;
+  }
+
   .md\:hover\:bg-transparent:hover{
     background-color: transparent !important;
   }
@@ -50656,6 +50920,10 @@ input:focus, button:focus {
 
   .md\:hover\:bg-overlay:hover{
     background-color: var(--overlay) !important;
+  }
+
+  .md\:hover\:bg-heroOverlay:hover{
+    background-color: var(--hero-overlay) !important;
   }
 
   .md\:focus\:bg-transparent:focus{
@@ -51226,6 +51494,10 @@ input:focus, button:focus {
     background-color: var(--overlay) !important;
   }
 
+  .md\:focus\:bg-heroOverlay:focus{
+    background-color: var(--hero-overlay) !important;
+  }
+
   .md\:bg-none{
     background-image: none !important;
   }
@@ -51742,6 +52014,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .md\:from-heroOverlay{
+    --gradient-from-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .md\:via-transparent{
     --gradient-via-color: transparent !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
@@ -52222,6 +52499,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .md\:via-heroOverlay{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .md\:to-transparent{
     --gradient-to-color: transparent !important;
   }
@@ -52604,6 +52886,10 @@ input:focus, button:focus {
 
   .md\:to-overlay{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .md\:to-heroOverlay{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .md\:hover\:from-transparent:hover{
@@ -53083,6 +53369,11 @@ input:focus, button:focus {
 
   .md\:hover\:from-overlay:hover{
     --gradient-from-color: var(--overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
+  .md\:hover\:from-heroOverlay:hover{
+    --gradient-from-color: var(--hero-overlay) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
@@ -53566,6 +53857,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .md\:hover\:via-heroOverlay:hover{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .md\:hover\:to-transparent:hover{
     --gradient-to-color: transparent !important;
   }
@@ -53948,6 +54244,10 @@ input:focus, button:focus {
 
   .md\:hover\:to-overlay:hover{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .md\:hover\:to-heroOverlay:hover{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .md\:focus\:from-transparent:focus{
@@ -54427,6 +54727,11 @@ input:focus, button:focus {
 
   .md\:focus\:from-overlay:focus{
     --gradient-from-color: var(--overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
+  .md\:focus\:from-heroOverlay:focus{
+    --gradient-from-color: var(--hero-overlay) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
@@ -54910,6 +55215,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .md\:focus\:via-heroOverlay:focus{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .md\:focus\:to-transparent:focus{
     --gradient-to-color: transparent !important;
   }
@@ -55292,6 +55602,10 @@ input:focus, button:focus {
 
   .md\:focus\:to-overlay:focus{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .md\:focus\:to-heroOverlay:focus{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .md\:bg-opacity-0{
@@ -56002,6 +56316,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .md\:border-heroOverlay{
+    border-color: var(--hero-overlay) !important;
+  }
+
   .md\:hover\:border-transparent:hover{
     border-color: transparent !important;
   }
@@ -56570,6 +56888,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .md\:hover\:border-heroOverlay:hover{
+    border-color: var(--hero-overlay) !important;
+  }
+
   .md\:focus\:border-transparent:focus{
     border-color: transparent !important;
   }
@@ -57136,6 +57458,10 @@ input:focus, button:focus {
 
   .md\:focus\:border-overlay:focus{
     border-color: var(--overlay) !important;
+  }
+
+  .md\:focus\:border-heroOverlay:focus{
+    border-color: var(--hero-overlay) !important;
   }
 
   .md\:border-opacity-0{
@@ -62451,6 +62777,18 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .md\:placeholder-heroOverlay::-moz-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .md\:placeholder-heroOverlay:-ms-input-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .md\:placeholder-heroOverlay::placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
   .md\:focus\:placeholder-transparent:focus::-moz-placeholder{
     color: transparent !important;
   }
@@ -64155,6 +64493,18 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .md\:focus\:placeholder-heroOverlay:focus::-moz-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .md\:focus\:placeholder-heroOverlay:focus:-ms-input-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .md\:focus\:placeholder-heroOverlay:focus::placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
   .md\:placeholder-opacity-0::-moz-placeholder{
     --placeholder-opacity: 0 !important;
   }
@@ -65118,6 +65468,10 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .md\:text-heroOverlay{
+    color: var(--hero-overlay) !important;
+  }
+
   .md\:hover\:text-transparent:hover{
     color: transparent !important;
   }
@@ -65686,6 +66040,10 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .md\:hover\:text-heroOverlay:hover{
+    color: var(--hero-overlay) !important;
+  }
+
   .md\:focus\:text-transparent:focus{
     color: transparent !important;
   }
@@ -66252,6 +66610,10 @@ input:focus, button:focus {
 
   .md\:focus\:text-overlay:focus{
     color: var(--overlay) !important;
+  }
+
+  .md\:focus\:text-heroOverlay:focus{
+    color: var(--hero-overlay) !important;
   }
 
   .md\:text-opacity-0{
@@ -72479,6 +72841,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .lg\:divide-heroOverlay > :not(template) ~ :not(template){
+    border-color: var(--hero-overlay) !important;
+  }
+
   .lg\:divide-solid > :not(template) ~ :not(template){
     border-style: solid !important;
   }
@@ -73168,6 +73534,10 @@ input:focus, button:focus {
     background-color: var(--overlay) !important;
   }
 
+  .lg\:bg-heroOverlay{
+    background-color: var(--hero-overlay) !important;
+  }
+
   .lg\:hover\:bg-transparent:hover{
     background-color: transparent !important;
   }
@@ -73734,6 +74104,10 @@ input:focus, button:focus {
 
   .lg\:hover\:bg-overlay:hover{
     background-color: var(--overlay) !important;
+  }
+
+  .lg\:hover\:bg-heroOverlay:hover{
+    background-color: var(--hero-overlay) !important;
   }
 
   .lg\:focus\:bg-transparent:focus{
@@ -74304,6 +74678,10 @@ input:focus, button:focus {
     background-color: var(--overlay) !important;
   }
 
+  .lg\:focus\:bg-heroOverlay:focus{
+    background-color: var(--hero-overlay) !important;
+  }
+
   .lg\:bg-none{
     background-image: none !important;
   }
@@ -74820,6 +75198,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .lg\:from-heroOverlay{
+    --gradient-from-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .lg\:via-transparent{
     --gradient-via-color: transparent !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
@@ -75300,6 +75683,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .lg\:via-heroOverlay{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .lg\:to-transparent{
     --gradient-to-color: transparent !important;
   }
@@ -75682,6 +76070,10 @@ input:focus, button:focus {
 
   .lg\:to-overlay{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .lg\:to-heroOverlay{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .lg\:hover\:from-transparent:hover{
@@ -76161,6 +76553,11 @@ input:focus, button:focus {
 
   .lg\:hover\:from-overlay:hover{
     --gradient-from-color: var(--overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
+  .lg\:hover\:from-heroOverlay:hover{
+    --gradient-from-color: var(--hero-overlay) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
@@ -76644,6 +77041,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .lg\:hover\:via-heroOverlay:hover{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .lg\:hover\:to-transparent:hover{
     --gradient-to-color: transparent !important;
   }
@@ -77026,6 +77428,10 @@ input:focus, button:focus {
 
   .lg\:hover\:to-overlay:hover{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .lg\:hover\:to-heroOverlay:hover{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .lg\:focus\:from-transparent:focus{
@@ -77505,6 +77911,11 @@ input:focus, button:focus {
 
   .lg\:focus\:from-overlay:focus{
     --gradient-from-color: var(--overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
+  .lg\:focus\:from-heroOverlay:focus{
+    --gradient-from-color: var(--hero-overlay) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
@@ -77988,6 +78399,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .lg\:focus\:via-heroOverlay:focus{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .lg\:focus\:to-transparent:focus{
     --gradient-to-color: transparent !important;
   }
@@ -78370,6 +78786,10 @@ input:focus, button:focus {
 
   .lg\:focus\:to-overlay:focus{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .lg\:focus\:to-heroOverlay:focus{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .lg\:bg-opacity-0{
@@ -79080,6 +79500,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .lg\:border-heroOverlay{
+    border-color: var(--hero-overlay) !important;
+  }
+
   .lg\:hover\:border-transparent:hover{
     border-color: transparent !important;
   }
@@ -79648,6 +80072,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .lg\:hover\:border-heroOverlay:hover{
+    border-color: var(--hero-overlay) !important;
+  }
+
   .lg\:focus\:border-transparent:focus{
     border-color: transparent !important;
   }
@@ -80214,6 +80642,10 @@ input:focus, button:focus {
 
   .lg\:focus\:border-overlay:focus{
     border-color: var(--overlay) !important;
+  }
+
+  .lg\:focus\:border-heroOverlay:focus{
+    border-color: var(--hero-overlay) !important;
   }
 
   .lg\:border-opacity-0{
@@ -85529,6 +85961,18 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .lg\:placeholder-heroOverlay::-moz-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .lg\:placeholder-heroOverlay:-ms-input-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .lg\:placeholder-heroOverlay::placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
   .lg\:focus\:placeholder-transparent:focus::-moz-placeholder{
     color: transparent !important;
   }
@@ -87233,6 +87677,18 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .lg\:focus\:placeholder-heroOverlay:focus::-moz-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .lg\:focus\:placeholder-heroOverlay:focus:-ms-input-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .lg\:focus\:placeholder-heroOverlay:focus::placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
   .lg\:placeholder-opacity-0::-moz-placeholder{
     --placeholder-opacity: 0 !important;
   }
@@ -88196,6 +88652,10 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .lg\:text-heroOverlay{
+    color: var(--hero-overlay) !important;
+  }
+
   .lg\:hover\:text-transparent:hover{
     color: transparent !important;
   }
@@ -88764,6 +89224,10 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .lg\:hover\:text-heroOverlay:hover{
+    color: var(--hero-overlay) !important;
+  }
+
   .lg\:focus\:text-transparent:focus{
     color: transparent !important;
   }
@@ -89330,6 +89794,10 @@ input:focus, button:focus {
 
   .lg\:focus\:text-overlay:focus{
     color: var(--overlay) !important;
+  }
+
+  .lg\:focus\:text-heroOverlay:focus{
+    color: var(--hero-overlay) !important;
   }
 
   .lg\:text-opacity-0{
@@ -95557,6 +96025,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .xl\:divide-heroOverlay > :not(template) ~ :not(template){
+    border-color: var(--hero-overlay) !important;
+  }
+
   .xl\:divide-solid > :not(template) ~ :not(template){
     border-style: solid !important;
   }
@@ -96246,6 +96718,10 @@ input:focus, button:focus {
     background-color: var(--overlay) !important;
   }
 
+  .xl\:bg-heroOverlay{
+    background-color: var(--hero-overlay) !important;
+  }
+
   .xl\:hover\:bg-transparent:hover{
     background-color: transparent !important;
   }
@@ -96812,6 +97288,10 @@ input:focus, button:focus {
 
   .xl\:hover\:bg-overlay:hover{
     background-color: var(--overlay) !important;
+  }
+
+  .xl\:hover\:bg-heroOverlay:hover{
+    background-color: var(--hero-overlay) !important;
   }
 
   .xl\:focus\:bg-transparent:focus{
@@ -97382,6 +97862,10 @@ input:focus, button:focus {
     background-color: var(--overlay) !important;
   }
 
+  .xl\:focus\:bg-heroOverlay:focus{
+    background-color: var(--hero-overlay) !important;
+  }
+
   .xl\:bg-none{
     background-image: none !important;
   }
@@ -97898,6 +98382,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .xl\:from-heroOverlay{
+    --gradient-from-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .xl\:via-transparent{
     --gradient-via-color: transparent !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(0, 0, 0, 0)) !important;
@@ -98378,6 +98867,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .xl\:via-heroOverlay{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .xl\:to-transparent{
     --gradient-to-color: transparent !important;
   }
@@ -98760,6 +99254,10 @@ input:focus, button:focus {
 
   .xl\:to-overlay{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .xl\:to-heroOverlay{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .xl\:hover\:from-transparent:hover{
@@ -99239,6 +99737,11 @@ input:focus, button:focus {
 
   .xl\:hover\:from-overlay:hover{
     --gradient-from-color: var(--overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
+  .xl\:hover\:from-heroOverlay:hover{
+    --gradient-from-color: var(--hero-overlay) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
@@ -99722,6 +100225,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .xl\:hover\:via-heroOverlay:hover{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .xl\:hover\:to-transparent:hover{
     --gradient-to-color: transparent !important;
   }
@@ -100104,6 +100612,10 @@ input:focus, button:focus {
 
   .xl\:hover\:to-overlay:hover{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .xl\:hover\:to-heroOverlay:hover{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .xl\:focus\:from-transparent:focus{
@@ -100583,6 +101095,11 @@ input:focus, button:focus {
 
   .xl\:focus\:from-overlay:focus{
     --gradient-from-color: var(--overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
+  .xl\:focus\:from-heroOverlay:focus{
+    --gradient-from-color: var(--hero-overlay) !important;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
@@ -101066,6 +101583,11 @@ input:focus, button:focus {
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
   }
 
+  .xl\:focus\:via-heroOverlay:focus{
+    --gradient-via-color: var(--hero-overlay) !important;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-via-color), var(--gradient-to-color, rgba(255, 255, 255, 0)) !important;
+  }
+
   .xl\:focus\:to-transparent:focus{
     --gradient-to-color: transparent !important;
   }
@@ -101448,6 +101970,10 @@ input:focus, button:focus {
 
   .xl\:focus\:to-overlay:focus{
     --gradient-to-color: var(--overlay) !important;
+  }
+
+  .xl\:focus\:to-heroOverlay:focus{
+    --gradient-to-color: var(--hero-overlay) !important;
   }
 
   .xl\:bg-opacity-0{
@@ -102158,6 +102684,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .xl\:border-heroOverlay{
+    border-color: var(--hero-overlay) !important;
+  }
+
   .xl\:hover\:border-transparent:hover{
     border-color: transparent !important;
   }
@@ -102726,6 +103256,10 @@ input:focus, button:focus {
     border-color: var(--overlay) !important;
   }
 
+  .xl\:hover\:border-heroOverlay:hover{
+    border-color: var(--hero-overlay) !important;
+  }
+
   .xl\:focus\:border-transparent:focus{
     border-color: transparent !important;
   }
@@ -103292,6 +103826,10 @@ input:focus, button:focus {
 
   .xl\:focus\:border-overlay:focus{
     border-color: var(--overlay) !important;
+  }
+
+  .xl\:focus\:border-heroOverlay:focus{
+    border-color: var(--hero-overlay) !important;
   }
 
   .xl\:border-opacity-0{
@@ -108607,6 +109145,18 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .xl\:placeholder-heroOverlay::-moz-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .xl\:placeholder-heroOverlay:-ms-input-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .xl\:placeholder-heroOverlay::placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
   .xl\:focus\:placeholder-transparent:focus::-moz-placeholder{
     color: transparent !important;
   }
@@ -110311,6 +110861,18 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .xl\:focus\:placeholder-heroOverlay:focus::-moz-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .xl\:focus\:placeholder-heroOverlay:focus:-ms-input-placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
+  .xl\:focus\:placeholder-heroOverlay:focus::placeholder{
+    color: var(--hero-overlay) !important;
+  }
+
   .xl\:placeholder-opacity-0::-moz-placeholder{
     --placeholder-opacity: 0 !important;
   }
@@ -111274,6 +111836,10 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .xl\:text-heroOverlay{
+    color: var(--hero-overlay) !important;
+  }
+
   .xl\:hover\:text-transparent:hover{
     color: transparent !important;
   }
@@ -111842,6 +112408,10 @@ input:focus, button:focus {
     color: var(--overlay) !important;
   }
 
+  .xl\:hover\:text-heroOverlay:hover{
+    color: var(--hero-overlay) !important;
+  }
+
   .xl\:focus\:text-transparent:focus{
     color: transparent !important;
   }
@@ -112408,6 +112978,10 @@ input:focus, button:focus {
 
   .xl\:focus\:text-overlay:focus{
     color: var(--overlay) !important;
+  }
+
+  .xl\:focus\:text-heroOverlay:focus{
+    color: var(--hero-overlay) !important;
   }
 
   .xl\:text-opacity-0{

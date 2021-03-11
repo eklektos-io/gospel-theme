@@ -2,6 +2,8 @@
 
 @import "site";
 
+@import "cp";
+
 @import "rich-text";
 
 @import "tailwindcss/components";

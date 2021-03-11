@@ -12,6 +12,7 @@
             :root {
                 --color: {{ settings:site_color }};
                 --overlay: {{ settings:site_color }}BF;
+                --hero-overlay: {{ if settings:color_overlay }}{{ settings:site_color }}{{ else }}#000000{{ /if }}{{ if settings:overlay_opacity == "25" }}40{{ elseif settings:overlay_opacity == "50" }}80{{ else }}BF{{ /if }};
             }
         </style>
 
