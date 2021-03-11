@@ -1,7 +1,7 @@
 name: Michael
 super: true
 id: 612a56fb-5afc-4cfa-ad62-4db3b143ba21
-password_hash: $2y$10$Ob5seZkiKPM4ujbe8RzjheKbD6o6vcJbMgdTP1x15L.XhJRL9sHtW
+password_hash: $2y$10$0F9JotM1rPVjA5X.uonGWOH/trQpgYP4V1kez9jj2YWv6PgFG2CIS
 preferences:
   collections:
     people:
