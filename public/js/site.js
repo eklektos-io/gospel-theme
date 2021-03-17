@@ -16101,7 +16101,7 @@ $("#menu-icon").click(function () {
     window.scrollTo(0, 0); // Scroll to top
 
     nav.delay(400).queue(function (next) {
-      $(this).css("background", "linear-gradient(#181818, 95%, transparent)");
+      $(this).css("background", "linear-gradient(rgb(24,24,24), 95%, rgba(24, 24, 24, 0))");
       next();
     });
     menuIconAnim.setDirection(1);
