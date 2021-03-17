@@ -1,6 +1,6 @@
 <section class="pt-32 pb-16 bg-gray-100">
     <div class="container mx-auto">
-        <div class="grid grid-cols-5 gap-4">
+        <div class="grid gap-x-4 gap-y-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             <ul>
                 <h3 class="font-serif text-2xl font-bold mb-2">About</h3>
                 {{ collection:about_pages }}
@@ -18,19 +18,19 @@
                 <li><a href="/sermons?by=all" class="link">Sermons</a></li>
                 {{ if settings:blog }}<li><a href="/blog" class="link">Blog</a></li>{{ /if }}
             </ul>
-            <div class="col-span-2">
+            <div class="col-span-1 sm:col-span-2 lg:col-span-2">
                 <h3 class="font-serif text-2xl font-bold mb-2">Signup for our Newsletter</h3>
                 <form action="" class="flex">
-                    <input type="email" name="Email" id="" placeholder="Enter your email*" class="h-10 px-4 flex-grow placeholder-gray-400 text-sm focus:border-color">
-                    <input type="button" value="Submit" class="px-10 uppercase tracking-widest font-bold text-white bg-color text-xs cursor-pointer">
+                    <input type="email" name="Email" id="" placeholder="Enter your email*" class="email h-10 px-4 flex-grow placeholder-gray-400 text-sm focus:border-color">
+                    <input type="button" value="Submit" class="uppercase tracking-widest font-bold text-white bg-color text-xs cursor-pointer px-6 sm:px-10">
                 </form>
             </div>
         </div>
         <div class="h-px w-full bg-gray-200 my-16"></div>
-        <div class="grid grid-cols-3 items-center">
-            <a href="/"><img src="{{ settings:color_logo }}" alt="" class="w-48"></a>
+        <div class="grid justify-items-center grid-cols-1 md:grid-cols-3 gap-y-6">
+            <a class="md:justify-self-start" href="/"><img src="{{ settings:color_logo }}" alt="" class="w-48"></a>
             <p class="text-xs text-center text-gray-400">© {{ now format="Y" }} {{ settings:church_name }}. All rights reserved.</p>
-            {{ partial:partials/social }}
+            <div class="md:justify-self-end">{{ partial:partials/social }}</div>
         </div>
     </div>
 </section>

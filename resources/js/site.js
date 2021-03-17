@@ -11,6 +11,7 @@ var menuIconAnim = lottie.loadAnimation({
 
 var menuIcon = $("#menu-icon"); // Menu Icon
 var menu = $("#menu"); // Menu
+var nav = $("#nav"); // Nav
 
 menu.hide() // Hide menu
 
@@ -23,12 +24,14 @@ function noScroll() {
 $("#menu-icon").click(function () {
     menuIcon = !menuIcon
     if (menuIcon) { // Second click
+        nav.css("background", "none");
         menuIconAnim.setDirection(-1);
         menuIconAnim.play();
         menu.fadeOut(400);
         window.removeEventListener('scroll', noScroll); // Enable scroll
-    } else { // Second click
+    } else { // First click
         window.scrollTo(0, 0); // Scroll to top
+        nav.delay(400).queue(function (next) {$(this).css("background", "linear-gradient(#181818, 95%, transparent)"); next(); });
         menuIconAnim.setDirection(1);
         menuIconAnim.play();
         menu.fadeIn(400);

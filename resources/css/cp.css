@@ -34,3 +34,70 @@
         box-shadow: 0 2px 5px rgba(90,4,228, 0.3) !important;
     }
 }
+
+.btn-dropdown-primary, .btn-primary {
+    background: linear-gradient(45deg, #3e9fff, #6203ff) !important;
+    box-shadow: 0 2px 5px rgba(4, 101, 228, 0.3) !important;
+    border: none !important;
+}
+
+.btn-dropdown-primar:hover, .btn-primary:hover {
+    background: linear-gradient(45deg, #3a94ee, #5a04e4) !important;
+    box-shadow: 0 2px 5px rgba(4, 101, 228, 0.3) !important;
+    border: none !important;
+}
+
+::selection {
+    background: #4970ff !important;
+    color: white;
+}
+
+.text-blue {
+    color: #4970ff !important;
+}
+
+a.text-blue:hover {
+    color: #5d75cc !important;
+}
+
+.popover-content button:hover:not(.warning) {
+    background-color: #4970ff !important;
+    color: white !important;
+}
+
+.nav-main a:hover {
+    color: #4970ff !important;
+}
+
+.data-table a:hover, .sortable-column:hover {
+    color: #4970ff !important;
+}
+
+.publish-tabs a:hover {
+    color: #4970ff !important;
+}
+
+.publish-tabs a.active {
+    color: #4970ff !important;
+    border-color: #4970ff !important;
+}
+
+.ProseMirror a {
+    color: #4970ff !important;
+}
+
+.ProseMirror blockquote {
+    border-color: #4970ff !important;
+}
+
+.btn-flat[target=_blank]:hover {
+    color: #4970ff !important;
+}
+
+.relationship-input-items a:hover {
+    color: #4970ff !important;
+}
+
+.vc-bg-blue-600 {
+    background-color: #4970ff !important;
+}

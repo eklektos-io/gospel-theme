@@ -2,8 +2,6 @@
 
 @import "site";
 
-@import "cp";
-
 @import "rich-text";
 
 @import "tailwindcss/components";
@@ -34,4 +32,35 @@
 
 input:focus, button:focus {
     outline: none;
+}
+
+@media (max-width: 1280px) {
+    .container {
+        width: 100%;
+        max-width: none;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .email {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 640px) {
+    .menu {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        grid-template-columns: 0.8fr 1fr auto;
+    }
 }

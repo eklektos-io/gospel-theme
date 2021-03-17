@@ -1,8 +1,8 @@
-<div id="menu" class="absolute inset-0 bg-gray-900 text-white z-40">
-    <div class="absolute inset-0 flex justify-center items-center mt-32">
-        <div class="container grid grid-rows-2 row-gap-20" style="grid-template-columns: 0.8fr 1fr auto;">
+<div id="menu" class="absolute inset-0 bg-gray-900 text-white z-40 overflow-auto">
+    <div class="flex justify-center items-center mt-32 sm:mt-40 lg:mt-48">
+        <div class="menu container grid grid-rows-2 row-gap-8 lg:row-gap-20">
             <nav>
-                <h2 class="font-serif text-6xl font-bold">About</h2>
+                <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold">About</h2>
                 <div class="w-32 h-2 my-4 bg-color"></div>
                 <ul>
                     {{ collection:about_pages }}
@@ -14,7 +14,7 @@
                 </ul>
             </nav>
             <nav>
-                <h2 class="font-serif text-6xl font-bold">Ministries</h2>
+                <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold">Ministries</h2>
                 <div class="w-32 h-2 my-4 bg-color"></div>
                 <ul>
                     {{ collection:ministry_pages }}
@@ -23,7 +23,7 @@
                 </ul>
             </nav>
             <nav>
-                <h2 class="font-serif text-6xl font-bold">Resources</h2>
+                <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold">Resources</h2>
                 <div class="w-32 h-2 my-4 bg-color"></div>
                 <ul>
                     <li class="pt-2"><a href="/sermons?by=all" class="hover:text-color">Sermons</a></li>
@@ -31,7 +31,7 @@
                 </ul>
             </nav>
             <nav>
-                <h2 class="font-serif text-6xl font-bold">Events</h2>
+                <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold">Events</h2>
                 <div class="w-32 h-2 my-4 bg-color"></div>
                 <ul>
                     <li class="pt-2"><a href="/events?type=upcoming" class="hover:text-color">Upcoming</a></li>
@@ -39,12 +39,12 @@
                 </ul>
             </nav>
             <nav>
-                <a class="font-serif text-6xl font-bold hover:text-color" href="/contact">Contact</a>
+                <a class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold hover:text-color" href="/contact">Contact</a>
                 <div class="w-32 h-2 my-4 bg-color"></div>
             </nav>
             <nav>
-                <a class="font-serif text-6xl font-bold hover:text-color" href="{{ settings:donate_link }}" target="_blank">Donate</a>
-                <div class="w-32 h-2 my-4 bg-color"></div>
+                <a class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold hover:text-color" href="{{ settings:donate_link }}" target="_blank">Donate</a>
+                <div class="w-32 h-2 my-4 bg-color mb-16 md:mb-0"></div>
             </nav>
         </div>
     </div>

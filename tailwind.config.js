@@ -9,6 +9,9 @@ module.exports = {
   important: true,
   theme: {
     extend: {
+      container: {
+        center: true,
+      },
       fontFamily: {
         'sans': 'Montserrat',
         'serif': 'Playfair Display',
@@ -19,6 +22,9 @@ module.exports = {
        spacing: {
         '72': '18rem',
         '80': '20rem',
+        '96': '24rem',
+        '112': '28rem',
+        'full': '100%',
        },
       colors: {
         color: "var(--color)",

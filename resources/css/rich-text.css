@@ -42,5 +42,5 @@
 }
 
 .rich-text blockquote {
-    @apply block my-10 mr-10 pl-10 border-l-4 border-color text-lg text-gray-500;
+    @apply block my-10 mr-10 pl-10 border-l-4 border-color text-gray-500;
 }
