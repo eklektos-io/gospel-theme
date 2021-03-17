@@ -31,7 +31,7 @@ $("#menu-icon").click(function () {
         window.removeEventListener('scroll', noScroll); // Enable scroll
     } else { // First click
         window.scrollTo(0, 0); // Scroll to top
-        nav.delay(400).queue(function (next) {$(this).css("background", "linear-gradient(rgb(24,24,24), 95%, rgba(24, 24, 24, 0))"); next(); });
+        nav.delay(400).queue(function (next) {$(this).css("background", "-webkit-linear-gradient(rgb(24,24,24), 95%, rgba(24, 24, 24, 0))"); next(); });
         menuIconAnim.setDirection(1);
         menuIconAnim.play();
         menu.fadeIn(400);
