@@ -1,0 +1,7 @@
+{{ sermons }}
+    <div class="py-8 mt-4 border-b border-gray-100 {{ paginate }}{{ if last && total_pages == 1 }}border-none{{ /if }}{{ /paginate }}">
+        <a href="{{ url }}"><h2 class="font-serif font-bold text-2xl pb-2 hover:text-color">{{ title }}</h2></a>
+        {{ partial:partials/sermon-info }}
+    </div>
+{{ /sermons }}
+{{ partial:partials/paginate }}

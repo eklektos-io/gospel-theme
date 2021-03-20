@@ -1,5 +1,5 @@
-<div class="flex justify-between content-center">
-    <h1 class="text-3xl font-bold">
+<div class="flex justify-between items-center">
+    <h1 class="text-3xl font-bold  w-3/4 sm:w-auto">
         {{ if get:by=="all" && last_segment=="sermons" }}
         View All
         {{ elseif get:by=="scripture" && last_segment=="sermons" }}
@@ -12,9 +12,23 @@
         Sermons by Series
         {{ /if }}
     </h1>
-    <div class="flex">
-        <a href="/sermons?by=all" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:by=="all" && last_segment=="sermons" }} border-color bg-color text-white{{ /if }}">View All</a>
-        <a href="/sermons-by-scripture" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:by=="scripture" || last_segment=="sermons-by-scripture" }} border-color bg-color text-white{{ /if }}">Scripture</a>
-        <a href="/sermons-by-series" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:by=="series" || last_segment=="sermons-by-series" }} border-color bg-color text-white{{ /if }}">Series</a>
-    </div> 
+
+    <!-- Desktop options -->
+    <div class="flex font-bold text-sm hidden md:block">
+        <a href="/sermons?by=all" class="px-6 py-3 border border-gray-100 ml-2 {{ if get:by=="all" && last_segment=="sermons" }} border-color bg-color text-white{{ /if }}">View All</a>
+        <a href="/sermons-by-scripture" class="px-6 py-3 border border-gray-100 ml-2 {{ if get:by=="scripture" || last_segment=="sermons-by-scripture" }} border-color bg-color text-white{{ /if }}">Scripture</a>
+        <a href="/sermons-by-series" class="px-6 py-3 border border-gray-100 ml-2 {{ if get:by=="series" || last_segment=="sermons-by-series" }} border-color bg-color text-white{{ /if }}">Series</a>
+    </div>
+
+    <!-- Mobile options -->
+    <div class="relative md:hidden">
+        <svg id="dropdown-btn" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer p-3 mr-2">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+        <div id="dropdown-menu" class="absolute right-0 w-48 mt-6 bg-white border border-gray-100 shadow-lg rounded-m text-sm z-20">
+            <a href="/sermons?by=all" class="block px-6 py-2 mt-2 hover:bg-color hover:text-white">View All</a>
+            <a href="/sermons-by-scripture" class="block px-6 py-2 hover:bg-color hover:text-white">By Scripture</a>
+            <a href="/sermons-by-series" class="block px-6 py-2 mb-2 hover:bg-color hover:text-white">By Series</a>
+        </div>
+    </div>
 </div>

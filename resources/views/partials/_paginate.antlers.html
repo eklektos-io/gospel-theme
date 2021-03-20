@@ -1,0 +1,13 @@
+<div class="mt-10 flex text-sm">
+    {{ paginate }}
+        {{ if total_pages > 1 }}
+            {{ if current_page != 1 }}
+                <a href="{{ prev_page }}" class="flex mr-8 hover:text-color"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-3 w-3 mr-1" style="margin-top: 3px;"><path stroke-linecap="square" stroke-linejoin="square" stroke-width="2" d="M15 19l-7-7 7-7" /></svg> Previous</a>
+            {{ /if }}
+            <div class="mr-8">{{ current_page }} / {{ total_pages }}</div>
+            {{ if current_page < total_pages }}
+                <a href="{{ next_page }}" class="flex hover:text-color">Next <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-3 w-3 ml-1" style="margin-top: 4px;"><path stroke-linecap="square" stroke-linejoin="square" stroke-width="2" d="M9 5l7 7-7 7" /></svg></a>
+            {{ /if }}
+        {{ /if }}
+    {{ /paginate }}
+</div>

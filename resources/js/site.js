@@ -1,3 +1,5 @@
+// *** MENU *** //
+
 var lottie = require("lottie-web");
 
 // Menu Icon Animation
@@ -21,7 +23,7 @@ function noScroll() {
   }
 
 // Menu interaction
-$("#menu-icon").click(function () {
+menuIcon.click(function () {
     menuIcon = !menuIcon
     if (menuIcon) { // Second click
         nav.css("background", "none");
@@ -39,13 +41,34 @@ $("#menu-icon").click(function () {
     };
 });
 
-var video = $("#video");
-var audio = $("#audio");
-var videoBtn = $("#video-button");
-var audioBtn = $("#audio-button");
 
-audio.hide()
+// *** SERMON INDEX DROPDOWN *** //
 
+var dropdownBtn = $("#dropdown-btn"); // Dropdown button
+var dropdownMenu = $("#dropdown-menu"); // Dropdown menu
+
+dropdownMenu.hide() // Hide dropdown menu
+
+// Dropdown interaction
+dropdownBtn.click(function () {
+    dropdownBtn = !dropdownBtn
+    if (dropdownBtn) { // Second click
+        dropdownMenu.hide();
+    } else { // First click
+        dropdownMenu.show();
+    };
+});
+
+// *** SERMON AUDIO & VIDEO TOGGLE *** //
+
+var video = $("#video"); // Video
+var audio = $("#audio"); // Audio
+var videoBtn = $("#video-button"); // Video button
+var audioBtn = $("#audio-button"); // Audio button
+
+audio.hide() // Hide audio by default
+
+// Show audio and hide video on click
 audioBtn.click(function () {
     video.fadeOut(200);
     audio.fadeIn(200);
@@ -53,6 +76,7 @@ audioBtn.click(function () {
     videoBtn.removeClass("text-white bg-color").addClass("text-color");
 });
 
+// Show video and hide audio on click
 videoBtn.click(function () {
     audio.fadeOut(200);
     video.fadeIn(200);
