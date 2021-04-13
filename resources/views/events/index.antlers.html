@@ -5,8 +5,8 @@
 {{ if get:type == "upcoming" }}
     {{ collection:events recurring_event:is="false" event_date:gte="{today format='Y-m-d'}" sort="event_date:asc" }}
         <div class="flex py-10 border-b border-gray-100 {{ if last }}border-none{{ /if }}">
-            {{ image }}<img src="{{ url }}" alt="" class="h-48 w-72 object-cover flex-none mr-8" style="object-position: {{ focus_css }};">{{ /image }}
-            <div class="relative">
+            {{ image }}<img src="{{ url }}" alt="" class="h-48 w-72 object-cover flex-none mr-8 hidden sm:block" style="object-position: {{ focus_css }};">{{ /image }}
+            <div class="relative pb-10">
                 <a href="{{ url }}"><h3 class="text-xl font-bold mb-2 hover:text-color">{{ title }}</h3></a>
                 <p class="text-sm"><strong>Date: </strong>{{ event_date format="F j, Y" }}</p>
                 <p class="text-sm mb-4"><strong>Location: </strong>{{ location }}</p>

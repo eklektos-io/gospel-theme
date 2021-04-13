@@ -1,27 +1,15 @@
 {{ if !settings:blog }}{{ redirect to="/" }}{{ /if }}
-<div class="grid grid-cols-4 gap-4 text-center mt-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-white text-center mt-10">
 {{ collection:blog_posts limit="12" paginate="true" as="posts" }}
     {{ posts }}
-    <a href="{{ url }}" class="relative h-80 overflow-hidden">
-        <div class="absolute h-full w-full bg-black text-white bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
-            <h4 class="font-serif text-2xl font-bold">{{ title }}</h4>
+    <a href="{{ url }}" class="relative overflow-hidden pb-40 sm:pb-full">
+        <div class="absolute h-full w-full bg-black bg-opacity-50 flex flex-col justify-center items-center z-10 hover:bg-overlay transition duration-200">
+            <h4 class="font-serif text-2xl font-bold leading-snug pb-1">{{ title }}</h4>
             <p class="text-sm">{{ date format="F j, Y" }}</p>
         </div>
-        <img class="absolute h-full w-full object-center object-cover" src="{{ image }}" alt="">
+        <img class="absolute h-full w-full object-cover" src="{{ image }}{{ url }}" alt="{{ alt }}" style="object-position: {{ focus_css }};"{{ /image }}>
     </a>
     {{ /posts }}
 </div>
-<div class="mt-10 flex text-sm">
-    {{ paginate }}
-        {{ if total_pages > 1 }}
-            {{ if current_page != 1 }}
-                <a href="{{ prev_page }}" class="flex mr-8 hover:text-color"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-3 w-3 mr-1" style="margin-top: 3px;"><path stroke-linecap="square" stroke-linejoin="square" stroke-width="2" d="M15 19l-7-7 7-7" /></svg> Previous</a>
-            {{ /if }}
-            <div class="mr-8">{{ current_page }} / {{ total_pages }}</div>
-            {{ if current_page < total_pages }}
-                <a href="{{ next_page }}" class="flex hover:text-color">Next <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-3 w-3 ml-1" style="margin-top: 4px;"><path stroke-linecap="square" stroke-linejoin="square" stroke-width="2" d="M9 5l7 7-7 7" /></svg></a>
-            {{ /if }}
-        {{ /if }}
-    {{ /paginate }}
-</div>
+{{ partial:partials/paginate }}
 {{ /collection:blog_posts }}

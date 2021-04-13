@@ -1,4 +1,4 @@
-<div class="flex justify-between content-center">
+<div class="inline-flex flex-wrap gap-x-4 gap-y-2 w-full justify-between items-center">
     <h1 class="text-3xl font-bold">
         {{ if get:type=="upcoming" && last_segment=="events" }}
         Upcoming Events
@@ -6,8 +6,28 @@
         Recurring Events
         {{ /if }}
     </h1>
-    <div class="flex">
+
+    <!-- Desktop options -->
+    <div class="flex font-bold text-sm hidden md:block">
         <a href="/events?type=upcoming" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:type=="upcoming" }} border-color bg-color text-white{{ /if }}">Upcoming</a>
         <a href="/events?type=recurring" class="px-6 py-3 border border-gray-100 font-bold text-sm ml-2 {{ if get:type=="recurring" }} border-color bg-color text-white{{ /if }}">Recurring</a>
-    </div> 
+    </div>
+
+    <!-- Mobile options -->
+    <div class="relative md:hidden">
+        <div id="dropdown-btn" class="border border-gray-200 px-5 py-3 flex justify-between w-40 text-sm font-semibold cursor-pointer">
+            {{ if get:type=="upcoming" && last_segment=="events" }}
+            Upcoming
+            {{ elseif get:type=="recurring" && last_segment=="events" }}
+            Recurring
+            {{ /if }}
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+        </div>
+        <div id="dropdown-menu" class="absolute right-0 w-40 bg-white border border-gray-100 border-t-0 rounded-m text-sm font-semibold z-20">
+            <a href="/events?type=upcoming" class="block px-6 py-2 mt-2 hover:bg-color hover:text-white">Upcoming</a>
+            <a href="/events?type=recurring" class="block px-6 py-2 mb-2 hover:bg-color hover:text-white">Recurring</a>
+        </div>
+    </div>
 </div>
