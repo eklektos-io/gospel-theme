@@ -1,6 +1,6 @@
-<div class="flex">
-    <div class="flex-none mr-8">
-        {{ image }}<img src="{{ url }}" alt="{{ alt }}" class="object-cover mb-4" style="object-position: {{ focus_css }}; height: 400px; width: 300px;">{{ /image }}
+<div class="flex flex-wrap lg:flex-no-wrap">
+    <div class="flex-none max-w-full mb-8 lg:mb-0 lg:mr-8">
+        {{ image }}<img src="{{ url }}" alt="{{ alt }}" class="object-cover mb-4 h-96 sm:h-112 max-w-full sm:w-80" style="object-position: {{ focus_css }}">{{ /image }}
         <li class="flex items-center mb-1">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class=" h-5 w-5 text-color mr-2">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
