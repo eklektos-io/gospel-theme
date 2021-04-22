@@ -3,6 +3,8 @@ data:
   church_name: 'Gospel Theme'
   white_logo: general/logo-white.svg
   color_logo: general/logo.svg
+  favicon: general/favicon.png
+  webclip: general/webclip.png
   site_color: '#A5895D'
   color_overlay: false
   overlay_opacity: '50'
