@@ -3,7 +3,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta content="{{ settings:open_graph_image }}" property="og:image">
+        <meta content="{{ if !image }}{{ settings:open_graph_image }}{{ else }}{{ image }}{{ /if }}" property="og:image">
         <meta property="og:title" content="{{ title }} - {{ settings:church_name }}" />
         <title>{{ title }} - {{ settings:church_name }}</title>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
