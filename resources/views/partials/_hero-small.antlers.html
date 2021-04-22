@@ -3,7 +3,7 @@
         {{ if collection=="sermons" || collection=="blog_posts" || collection=="events" || collection=="people" }}
             {{ partial:partials/breadcrumbs }}
         {{ /if }}
-        <h1 class="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold">{{ title }}</h1>
+        <h1 class="text-4xl sm:text-5xl lg:text-7xl leading-none sm:leading-normal my-4 sm:my-0 font-serif font-bold">{{ title }}</h1>
         {{ if collection=="sermons"}}
             {{ partial:partials/sermon-info theme="white" }}
         {{ elseif collection=="blog_posts"}}
