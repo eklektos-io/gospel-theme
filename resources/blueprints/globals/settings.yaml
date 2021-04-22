@@ -54,7 +54,7 @@ sections:
           display: Favicon
           type: assets
           icon: assets
-          width: 50
+          width: 33
           listable: hidden
       -
         handle: webclip
@@ -67,7 +67,20 @@ sections:
           display: Webclip
           type: assets
           icon: assets
-          width: 50
+          width: 33
+          listable: hidden
+      -
+        handle: open_graph_image
+        field:
+          mode: grid
+          container: images
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Open Graph Image'
+          type: assets
+          icon: assets
+          width: 33
           listable: hidden
       -
         handle: site_color
