@@ -5,6 +5,7 @@ data:
   color_logo: general/logo.svg
   favicon: general/favicon.png
   webclip: general/webclip.png
+  open_graph_image: general/open-graph.png
   site_color: '#A5895D'
   color_overlay: false
   overlay_opacity: '50'
