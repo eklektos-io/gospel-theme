@@ -44,6 +44,32 @@ sections:
           validate:
             - required
       -
+        handle: favicon
+        field:
+          mode: grid
+          container: images
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Favicon
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+      -
+        handle: webclip
+        field:
+          mode: grid
+          container: images
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Webclip
+          type: assets
+          icon: assets
+          width: 50
+          listable: hidden
+      -
         handle: site_color
         field:
           theme: classic
