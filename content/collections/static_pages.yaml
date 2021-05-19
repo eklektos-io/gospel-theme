@@ -7,18 +7,3 @@ sort_dir: asc
 structure:
   root: true
   max_depth: 1
-  tree:
-    -
-      entry: home
-    -
-      entry: 4d304169-dfcc-4d8a-b46a-94bbf74f40f5
-    -
-      entry: e6180e0e-5230-47b3-b032-041b8c9240d9
-    -
-      entry: deddd819-3b16-4546-8ffa-19cf382342ce
-    -
-      entry: 258dbd65-4ddc-42de-b8fd-db2edc014621
-    -
-      entry: 8e7ef275-1053-4de4-8524-9fcc030898c9
-    -
-      entry: 3a016bc3-1a77-4d1c-afa2-d10cf5c60e52
