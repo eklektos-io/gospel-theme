@@ -24,7 +24,7 @@
 
     <!-- Mobile options -->
     <div class="relative md:hidden">
-        <div id="dropdown-btn" class="border border-gray-200 px-5 py-3 flex justify-between w-48 text-sm font-semibold cursor-pointer">
+        <div id="dropdown-btn" class="border border-gray-200 px-5 py-3 flex justify-between w-40 text-sm font-semibold cursor-pointer">
             {{ if get:by=="all" && last_segment=="sermons" }}
             View All
             {{ elseif get:by=="scripture" || last_segment=="sermons-by-scripture" }}
@@ -32,11 +32,9 @@
             {{ elseif get:by=="series" || last_segment=="sermons-by-series" }}
             Series
             {{ /if }}
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
+            
         </div>
-        <div id="dropdown-menu" class="absolute right-0 w-48 bg-white border border-gray-100 border-t-0 rounded-m text-sm font-semibold z-20">
+        <div id="dropdown-menu" class="absolute right-0 w-40 bg-white border border-gray-100 border-t-0 rounded-m text-sm font-semibold z-20">
             <a href="/sermons?by=all" class="block px-6 py-2 mt-2 hover:bg-color hover:text-white">View All</a>
             <a href="/sermons-by-scripture" class="block px-6 py-2 hover:bg-color hover:text-white">Scripture</a>
             <a href="/sermons-by-series" class="block px-6 py-2 mb-2 hover:bg-color hover:text-white">Series</a>
