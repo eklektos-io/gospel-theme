@@ -89,3 +89,15 @@ editor:
     - 'create users'
     - 'delete users'
     - 'change passwords'
+events:
+  title: Events
+  permissions:
+    - 'view events entries'
+    - 'edit events entries'
+    - 'create events entries'
+    - 'delete events entries'
+    - 'publish events entries'
+    - 'reorder events entries'
+    - 'edit other authors events entries'
+    - 'publish other authors events entries'
+    - 'delete other authors events entries'
