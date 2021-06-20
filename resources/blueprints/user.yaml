@@ -19,11 +19,6 @@ sections:
           type: user_roles
           width: 50
       -
-        handle: groups
-        field:
-          type: user_groups
-          width: 50
-      -
         handle: avatar
         field:
           type: assets
